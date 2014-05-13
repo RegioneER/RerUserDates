@@ -1,0 +1,28 @@
+{
+    "name": "RerUserDates",
+    "version": "1.0.0",
+    "license": "GPL v3+",
+    "description": "Avoids regular users choosing date ranges as their default setting trying to save server resources",
+    "homepage": "https://RegioneER.github.io/piwik-plugins/RerUserDates",
+    "keywords": [ "users", "manager", "dates", "range", "default", "administration", "backend" ],
+    "require": {
+        "piwik": ">=2.2.3b4"
+    },
+    "donate": {
+        "paypal": "supporters@piwik.org",
+        "flattr": "https://flattr.com/thing/131552/Piwik-Web-Analytics-Open-Source",
+        "bitcoin": "http://piwik.org"
+    },
+    "authors": [
+        {
+            "name": "Pierluigi Tassi",
+            "email": "ptassi@regione.emilia-romagna.it",
+            "homepage": "https://github.com/tassoman"
+        },
+        {
+            "name": "Regione Emilia-Romagna",
+            "email": "webmaster@regione.emilia-romagna.it",
+            "homepage": "https://RegioneER.github.io"
+        }
+    ]
+}
