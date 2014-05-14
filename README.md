@@ -11,6 +11,8 @@ This action is resource intensive so when it happens, live tracking may become s
 Installing this plugin you remove choices in the field _"Report date to load by default"_ in _User Settings page_ for all regular users.
 Superadmin users setting page remains untouched and adminstrators will see only a notification about this plugin behavior.
 
+![Screenshot](https://raw.github.com/RegioneER/RerUserDates/master/screenshots/RerUserDates.png)
+
 ## Installation
 
 Please, read official [Piwik's documentation](http://piwik.org/faq/plugins/#faq_21) about it.
@@ -29,7 +31,8 @@ For sure! Just send a [pull request on Github](https://github.com/RegioneER/RerN
 ## Changelog
 
 * 1.0.0 Repository configuration
-* __1.0.1__ First release and Marketplace integration
+* 1.0.1 First release and Marketplace integration
+* __1.0.2__ Added Screenshot and better Readme documentation
 
 ## License
 
