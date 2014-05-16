@@ -1,5 +1,6 @@
 {
     "RerUserDates": {
-        "SuperuserMessage": "For regular users ranged default dates are forbidden (RerUserDates)"
+        "SuperuserMessage": "Regular users can't select custom range dates, neither as default in their profile. (RerUserDates)",
+        "DefaultDateMessage": "Your profile setting for default date range was set to 'yesterday' because custom range date selection is disabled"
     }
 }

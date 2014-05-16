@@ -2,16 +2,19 @@
 
 ## Description
 
-This [Piwik](http://piwik.org) Plugin avoids regular users choosing date ranges as their default setting trying to save server resources.
+This [Piwik](http://piwik.org) Plugin avoids regular users choosing date ranges as their default setting trying to save server resources,
+then removes custom range selection from the calendar.
 
 Each time users asks for ranged date reports, Piwik builds it on the fly during user's request.
 This slows down the server when you have a big amount of visits and a large number of tracked websites.
 This action is resource intensive so when it happens, live tracking may become slow or inaccurate.
 
 Installing this plugin you remove choices in the field _"Report date to load by default"_ in _User Settings page_ for all regular users.
-Superadmin users setting page remains untouched and adminstrators will see only a notification about this plugin behavior.
+Superadmin users setting page remains untouched and adminstrators will see only a notification about plugin's behavior.
 
-![Screenshot](https://raw.github.com/RegioneER/RerUserDates/master/screenshots/RerUserDates.png)
+Since version 1.1.0 regular users can't select any more a custom range in the calendar but Superadmins still can build reports.
+
+This plugin is translated in: English and Italian (just send a pull request to include your favourite language, see _Can I contribute_ f.a.q.)
 
 ## Installation
 
@@ -30,9 +33,23 @@ For sure! Just send a [pull request on Github](https://github.com/RegioneER/RerN
 
 ## Changelog
 
-* 1.0.0 Repository configuration
-* 1.0.1 First release and Marketplace integration
-* __1.0.2__ Added Screenshot and better Readme documentation
+### 1.0.0
+
+Repository configuration
+
+### 1.0.1
+
+First release and Marketplace integration
+
+### 1.0.2
+
+User Manager screen shot and better readme documentation
+
+### 1.1.0
+
+Custom date range selection is disabled in the calendar only for regular users. A shorts jQuery snippet hides radio input and submit button.
+
+Regular users who chose a range date as their default are now forced to _yesterday_ report just visiting the index page with a warning notification.
 
 ## License
 

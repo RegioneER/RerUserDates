@@ -8,10 +8,12 @@
  */
 namespace Piwik\Plugins\RerUserDates;
 
+use Piwik\Common;
 use Piwik\Piwik;
 use Piwik\Plugin;
 use Piwik\Notification;
 use Piwik\Plugins\UsersManager\API as APIUsersManager;
+use Piwik\Url;
 
 /**
  */
@@ -23,9 +25,19 @@ class RerUserDates extends Plugin
     public function getListHooksRegistered()
     {
         return array(
+            'AssetManager.getJavaScriptFiles'      => 'getJsFiles',
             'UsersManager.getDefaultDates'         => 'noRangedDates',
             'Controller.UsersManager.userSettings' => 'userSettingsNotification',
+            'Controller.CoreHome.index'            => 'checkDefaultReportDate'
         );
+    }
+
+    /**
+     * @param $jsFiles
+     */
+    public function getJsFiles(&$jsFiles)
+    {
+        $jsFiles[] = 'plugins/RerUserDates/javascripts/RerUserDates.js';
     }
 
     /**
@@ -47,8 +59,6 @@ class RerUserDates extends Plugin
                 'year'      => Piwik::translate('General_CurrentYear'),
             );
         }
-
-        return $dates;
     }
 
     /**
@@ -73,12 +83,36 @@ class RerUserDates extends Plugin
     {
         $userLogin = Piwik::getCurrentUserLogin();
         $user = APIUsersManager::getInstance()->getUser($userLogin);
-
         if (true == $user['superuser_access']) {
+
             return true;
         }
 
         return false;
+    }
+
+    /**
+     * Override for unwanted custom range selections setting to yesterday/day period with warning notification
+     */
+    public function checkDefaultReportDate()
+    {
+        Piwik::checkUserIsNotAnonymous();
+
+        if (false == $this->isSuperuser()) {
+            $userDates = APIUsersManager::getInstance()->getUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT_DATE);
+            if (preg_match('/^(next|prev)/', $userDates)) {
+                APIUsersManager::getInstance()->setUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT_DATE, 'yesterday');
+
+                $notification = new Notification(Piwik::translate('RerUserDates_DefaultDateMessage'));
+                $notification->context = Notification::CONTEXT_WARNING;
+                Notification\Manager::notify('RerUserDates_DefaultDateMessage', $notification);
+
+                $period = Common::getRequestVar('period');
+                if ('range' == $period) {
+                    Piwik::redirectToModule('CoreHome','index', array('period' => 'day', 'date' => 'yesterday'));
+                }
+            }
+        }
     }
 
 }

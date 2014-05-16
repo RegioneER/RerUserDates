@@ -1,5 +1,6 @@
 {
     "RerUserDates": {
-        "SuperuserMessage": "Agli utenti standard è vietato impostare il range di date come predefiniti (RerUserDates)"
+        "SuperuserMessage": "Gli utenti non possono selezionare range di date personalizzati, nemmeno come impostazione di default nel profilo (RerUserDates)",
+        "DefaultDateMessage": "L'intervallo di default per i report è stato impostato a 'ieri' poiché non è possibile selezionare periodi personalizzati"
     }
 }
