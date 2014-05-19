@@ -14,7 +14,7 @@ Superadmin users setting page remains untouched and adminstrators will see only 
 
 Since version 1.1.0 regular users can't select any more a custom range in the calendar but Superadmins still can build reports.
 
-This plugin is translated in: English and Italian (just send a pull request to include your favourite language, see _Can I contribute_ f.a.q.)
+This plugin is translated in: English, Italian and French (just send a pull request to include your favourite language, see _Can I contribute_ f.a.q.)
 
 ## Installation
 
@@ -28,28 +28,35 @@ Just take a look at _screenshots_ directory.
 __Is there any user interface configuration?__
 No, any. You don't have to configure things, only to activate or deactivate the plugin.
 
+__Can I donor to you?__
+No, we can't accept donations because we're a Government Organization. Our donation links official Piwik project, simply help them to help us.
+
 __Can I contribute on development?__
 For sure! Just send a [pull request on Github](https://github.com/RegioneER/RerNewSite/issues)!
 
 ## Changelog
 
-### 1.0.0
+### v1.0.0
 
 Repository configuration
 
-### 1.0.1
+### v1.0.1
 
 First release and Marketplace integration
 
-### 1.0.2
+### v1.0.2
 
 User Manager screen shot and better readme documentation
 
-### 1.1.0
+### v1.1.0
 
 Custom date range selection is disabled in the calendar only for regular users. A shorts jQuery snippet hides radio input and submit button.
 
 Regular users who chose a range date as their default are now forced to _yesterday_ report just visiting the index page with a warning notification.
+
+### v1.1.1
+
+New French translation by [gaumondp](https://github.com/gaumondp)
 
 ## License
 
