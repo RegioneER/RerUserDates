@@ -1,6 +1,6 @@
 {
     "name": "RerUserDates",
-    "version": "1.1.1",
+    "version": "1.1.1a",
     "license": "GPL v3+",
     "description": "Avoids regular users choosing date ranges as their default setting trying to save server resources, then removes custom range selection from the calendar",
     "homepage": "https://RegioneER.github.io/piwik-plugins/RerUserDates",
