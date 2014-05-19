@@ -1,0 +1,6 @@
+{
+    "RerUserDates": {
+        "SuperuserMessage": "Les utilisateurs réguliers ne peuvent sélectionner de plages de dates dans les tableaux de bord ou dans leur profile (RerUserDates)",
+        "DefaultDateMessage": "La plage de dates par défaut est automatiquement mise sur 'hier' puisque les plages de dates sont désactivées"
+    }
+}
