@@ -1,6 +1,11 @@
 {
     "RerUserDates": {
-        "SuperuserMessage": "Gli utenti non possono selezionare range di date personalizzati, nemmeno come impostazione di default nel profilo (RerUserDates)",
-        "DefaultDateMessage": "L'intervallo di default per i report è stato impostato a 'ieri' poiché non è possibile selezionare periodi personalizzati"
+        "Settings": "Per migliorare le performance di Piwik puoi rimuovere i range personalizzati dagli utenti nel loro profilo default ed impostarli a 'Ieri'. Puoi anche rimuovere il campo 'Intervallo di date' dal calendario.",
+        "SettingsProfiles": "Rimuovi i range personalizzati nelle impostazioni utente di default",
+        "SettingsProfilesDescription": "Gli utenti possono scegliere soltanto, ieri, oggi, settimana, mese, anno corrente. Nel caso abbiano già scelto un range, vengono forzati a 'Ieri'",
+        "SettingsCalendars": "Nascondi 'Intervallo di date' dal calendario",
+        "SettingsCalendarsDescription": "Gli utenti eviteranno di generare report su periodi personalizzati e saranno limitati ai report standard: giorno, settimana, mese e anno.",
+        "SuperuserMessage": "Agli utenti non è permesso di selezionare un range di date personalizzato, i profili impostati in precedenza ora vengono forzati a 'ieri'. (RerUserDates)",
+        "DefaultDateMessage": "L'intervallo di default per i report è stato impostato a 'ieri'. Puoi modificare il valore nella pagina Impostazioni Utente"
     }
 }

@@ -2,17 +2,19 @@
 
 ## Description
 
-This [Piwik](http://piwik.org) Plugin avoids regular users choosing date ranges as their default setting trying to save server resources,
-then removes custom range selection from the calendar.
+This [Piwik](http://piwik.org) Plugin lets you hide custom date range selection from calendar for regular users,
+also lets you avoid users setting ranges as default value in their profile.
 
-Each time users asks for ranged date reports, Piwik builds it on the fly during user's request.
-This slows down the server when you have a big amount of visits and a large number of tracked websites.
-This action is resource intensive so when it happens, live tracking may become slow or inaccurate.
+Each time users asks for ranged date reports, Piwik builds it on the fly during user's browsing.
+This slows down your server when there is a load of visits and a large number of tracked websites.
+As you can see this action is resource intensive so when it happens, live websites tracking may become slow or inaccurate.
 
 Installing this plugin you remove choices in the field _"Report date to load by default"_ in _User Settings page_ for all regular users.
-Superadmin users setting page remains untouched and adminstrators will see only a notification about plugin's behavior.
+Superadmin users setting page remains untouched and administrators will see only a notification about plugin's current behavior.
 
-Since version 1.1.0 regular users can't select any more a custom range in the calendar but Superadmins still can build reports.
+Another plugin's feature is regular users can't select any more a custom range in the calendar but Superadmins still can build reports.
+
+You can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page available in the super admin user interface.
 
 This plugin is translated in: English, Italian and French (just send a pull request to include your favourite language, see _Can I contribute_ f.a.q.)
 
@@ -23,10 +25,7 @@ Please, read official [Piwik's documentation](http://piwik.org/faq/plugins/#faq_
 ## FAQ
 
 __I would like to see a demonstration...__
-Just take a look at _screenshots_ directory.
-
-__Is there any user interface configuration?__
-No, any. You don't have to configure things, only to activate or deactivate the plugin.
+Just take a look at _screenshots_ .
 
 __Can I donor to you?__
 No, we can't accept donations because we're a Government Organization. Our donation links official Piwik project, simply help them to help us.
@@ -57,6 +56,10 @@ Regular users who chose a range date as their default are now forced to _yesterd
 ### v1.1.1
 
 New French translation by [gaumondp](https://github.com/gaumondp)
+
+### v.1.2.0
+
+New plugin settings user interface for super admins, some better improvement and few bugs solved.
 
 ## License
 

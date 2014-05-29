@@ -28,7 +28,8 @@ class RerUserDates extends Plugin
             'AssetManager.getJavaScriptFiles'      => 'getJsFiles',
             'UsersManager.getDefaultDates'         => 'noRangedDates',
             'Controller.UsersManager.userSettings' => 'userSettingsNotification',
-            'Controller.CoreHome.index'            => 'checkDefaultReportDate'
+            'Controller.CoreHome.index'            => 'checkDefaultReportDate',
+            'Controller.MultiSites.index'          => 'checkDefaultReportDate',
         );
     }
 
@@ -50,7 +51,9 @@ class RerUserDates extends Plugin
     {
         Piwik::checkUserIsNotAnonymous();
 
-        if (false == $this->isSuperuser()) {
+        $settings = new Settings('RerUserDates');
+
+        if (true === $settings->profiles->getValue() && false === $this->isSuperuser()) {
             $dates = array(
                 'today'     => Piwik::translate('General_Today'),
                 'yesterday' => Piwik::translate('General_Yesterday'),
@@ -62,13 +65,15 @@ class RerUserDates extends Plugin
     }
 
     /**
-     * Notify plugin's behaviour only to Superadmins
+     * Notify plugin's behaviour only to Super admins
      */
     public function userSettingsNotification()
     {
         Piwik::checkUserIsNotAnonymous();
 
-        if (true == $this->isSuperuser()) {
+        $settings = new Settings('RerUserDates');
+
+        if (true === $settings->profiles->getValue() && true === $this->isSuperuser()) {
             $notification = new Notification(Piwik::translate('RerUserDates_SuperuserMessage'));
             Notification\Manager::notify('RerUserDates_SuperuserMessage', $notification);
         }
@@ -98,9 +103,13 @@ class RerUserDates extends Plugin
     {
         Piwik::checkUserIsNotAnonymous();
 
-        if (false == $this->isSuperuser()) {
+        $settings = new Settings('RerUserDates');
+
+        if (true === $settings->profiles->getValue() && false === $this->isSuperuser()) {
             $userDates = APIUsersManager::getInstance()->getUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT_DATE);
-            if (preg_match('/^(next|prev)/', $userDates)) {
+            $userReport = APIUsersManager::getInstance()->getUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT);
+
+            if (preg_match('/^[prev|last].+/', $userDates)) {
                 APIUsersManager::getInstance()->setUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT_DATE, 'yesterday');
 
                 $notification = new Notification(Piwik::translate('RerUserDates_DefaultDateMessage'));
@@ -109,7 +118,7 @@ class RerUserDates extends Plugin
 
                 $period = Common::getRequestVar('period');
                 if ('range' == $period) {
-                    Piwik::redirectToModule('CoreHome','index', array('period' => 'day', 'date' => 'yesterday'));
+                    Piwik::redirectToModule($userReport,'index', array('period' => 'day', 'date' => 'yesterday'));
                 }
             }
         }

@@ -1,6 +1,11 @@
 {
     "RerUserDates": {
-        "SuperuserMessage": "Regular users can't select custom range dates, neither as default in their profile. (RerUserDates)",
-        "DefaultDateMessage": "Your profile setting for default date range was set to 'yesterday' because custom range date selection is disabled"
+        "Settings": "Get better Piwik's performances removing custom range values from users profiles forcing their default to 'yesterday'. You can also hide 'Date Range' field from dashboard's calendar.",
+        "SettingsProfiles": "Remove custom range values as default in users profiles",
+        "SettingsProfilesDescription": "Regular users can only choose today, yesterday, week, month ranges as default value in their profile. Users already with ranges are forced to 'yesterday'",
+        "SettingsCalendars": "Hide 'Date range' in the calendar",
+        "SettingsCalendarsDescription": "Avoid users choose a custom range report in their dashboard's calendar.",
+        "SuperuserMessage": "Regular users are forbidden to choose a ranged default value in their profile. Ranged values are forced to 'yesterday' (RerUserDates)",
+        "DefaultDateMessage": "Your default user setting 'range' is now 'yesterday'. You can visit user settings page to choose a different range"
     }
 }

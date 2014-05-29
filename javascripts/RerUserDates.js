@@ -10,9 +10,9 @@ $(document).ready(function () {
         var ajaxHelper = require('ajaxHelper');
         var ajax = new ajaxHelper();
         ajax.setTimeout(5000);
-        ajax.setUrl("index.php?module=API&method=UsersManager.hasSuperUserAccess&format=JSON");
+        ajax.setUrl("index.php?module=API&method=RerUserDates.getSettingsCalendars&format=JSON");
         ajax.setCallback(function (response) {
-            if (false == response.value) {
+            if (true == response.value && false == piwik.hasSuperUserAccess) {
                 $('.period-type label:last-of-type').hide();
                 $('.period-type div:last-of-type').hide();
                 $('#calendarRangeApply').hide();
