@@ -1,12 +1,12 @@
 {
     "name": "RerUserDates",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "license": "GPL v3+",
     "description": "Hide custom date range selection from calendar, avoid users to set ranges in their default profile",
     "homepage": "https://RegioneER.github.io/projects/",
     "keywords": [ "calendar", "date", "range", "users", "profiles", "admin", "performance" ],
     "require": {
-        "piwik": ">=2.2.3-b4"
+        "piwik": ">=2.3.0"
     },
     "donate": {
         "paypal": "supporters@piwik.org",

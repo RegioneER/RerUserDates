@@ -8,6 +8,8 @@
  */
 
 namespace Piwik\Plugins\RerUserDates;
+use Piwik\Access;
+use Piwik\Version;
 
 /**
  * Provided by RerUserDates plugin
@@ -23,8 +25,27 @@ class API extends \Piwik\Plugin\API
      */
     public function getSettingsCalendars()
     {
-        $settings = new Settings('RerUserDates');
-        return $settings->calendars->getValue();
+        if ('anonymous' == Access::getInstance()->getLogin())
+        {
+            return false;
+        }
+
+        if (version_compare(Version::VERSION, '2.4.0-b1', 'ge'))
+        {
+            $settings = new Settings('RerUserDates');
+
+            return $settings->getSettingValue($settings->calendars);
+        }
+
+        return false;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVersion()
+    {
+        return Version::VERSION;
     }
 
 } 

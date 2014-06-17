@@ -14,7 +14,7 @@ Superadmin users setting page remains untouched and administrators will see only
 
 Another plugin's feature is regular users can't select any more a custom range in the calendar but Superadmins still can build reports.
 
-You can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page available in the super admin user interface.
+Since Piwik 2.4.0 you can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page available in the super admin user interface.
 
 This plugin is translated in: English, Italian and French (just send a pull request to include your favourite language, see _Can I contribute_ f.a.q.)
 
@@ -27,39 +27,30 @@ Please, read official [Piwik's documentation](http://piwik.org/faq/plugins/#faq_
 __I would like to see a demonstration...__
 Just take a look at _screenshots_ .
 
-__Can I donor to you?__
-No, we can't accept donations because we're a Government Organization. Our donation links official Piwik project, simply help them to help us.
+__Can I donate to you?__
+Thanks but we can't accept money donations because we're a Government Organization.
+All donation are linked to official Piwik project's accounts, simply help them to help us.
 
 __Can I contribute on development?__
-For sure! Just send a [pull request on Github](https://github.com/RegioneER/RerNewSite/issues)!
+Sure, you're welcome! Just send a [pull request on Github](https://github.com/RegioneER/RerNewSite/issues)
 
 ## Changelog
 
-### v1.0.0
+### v1.0
 
-Repository configuration
+ - First release and Marketplace integration
+ - User Manager screen shot and better readme documentation
 
-### v1.0.1
+### v1.1
 
-First release and Marketplace integration
+- Custom date range selection is disabled in the calendar only for regular users. A shorts jQuery snippet hides radio input and submit button.
+- Regular users who chose a range date as their default are now forced to _yesterday_ report just visiting the index page with a warning notification.
+- New French translation by [gaumondp](https://github.com/gaumondp)
 
-### v1.0.2
+### v.1.2
 
-User Manager screen shot and better readme documentation
-
-### v1.1.0
-
-Custom date range selection is disabled in the calendar only for regular users. A shorts jQuery snippet hides radio input and submit button.
-
-Regular users who chose a range date as their default are now forced to _yesterday_ report just visiting the index page with a warning notification.
-
-### v1.1.1
-
-New French translation by [gaumondp](https://github.com/gaumondp)
-
-### v.1.2.0
-
-New plugin settings user interface for super admins, some better improvement and few bugs solved.
+- New plugin settings user interface for super admins, some better improvement and few bugs solved.
+- Solved a regression due to a lack of Settings Feature in Piwik's versions below 2.4.0
 
 ## License
 
@@ -67,5 +58,4 @@ New plugin settings user interface for super admins, some better improvement and
 
 ## Support
 
-Any feedback is welcome at the plugin's issues center on Github.
-[https://github.com/RegioneER/RerUserDates/issues](https://github.com/RegioneER/RerUserDates/issues)
+You can ask for support and your feedback is appreciated at plugin's [issue center on Github](https://github.com/RegioneER/RerUserDates/issues).

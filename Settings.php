@@ -11,6 +11,7 @@ namespace Piwik\Plugins\RerUserDates;
 
 use Piwik\Piwik;
 use Piwik\Settings\SystemSetting;
+use Piwik\Version;
 
 /**
  * Class Settings
@@ -34,9 +35,11 @@ class Settings extends \Piwik\Plugin\Settings
     protected function init()
     {
         $this->setIntroduction(Piwik::translate('RerUserDates_Settings'));
-
-        $this->createProfileSettings();
-        $this->createCalendarSettings();
+        if (version_compare(Version::VERSION, '2.4.0-b1', 'ge'))
+        {
+            $this->createProfileSettings();
+            $this->createCalendarSettings();
+        }
     }
 
     /**

@@ -14,11 +14,19 @@ use Piwik\Plugin;
 use Piwik\Notification;
 use Piwik\Plugins\UsersManager\API as APIUsersManager;
 use Piwik\Url;
+use Piwik\Version;
 
 /**
  */
 class RerUserDates extends Plugin
 {
+    /**
+     * Default profiles value if Piwik's Settings Feature not available
+     *
+     * @var bool
+     */
+    protected $profiles = true;
+
     /**
      * @see Piwik\Plugin::getListHooksRegistered
      */
@@ -51,9 +59,9 @@ class RerUserDates extends Plugin
     {
         Piwik::checkUserIsNotAnonymous();
 
-        $settings = new Settings('RerUserDates');
+        $this->checkPiwikSettingsFeature();
 
-        if (true === $settings->profiles->getValue() && false === $this->isSuperuser()) {
+        if (true === $this->profiles && false === $this->isSuperuser()) {
             $dates = array(
                 'today'     => Piwik::translate('General_Today'),
                 'yesterday' => Piwik::translate('General_Yesterday'),
@@ -71,9 +79,9 @@ class RerUserDates extends Plugin
     {
         Piwik::checkUserIsNotAnonymous();
 
-        $settings = new Settings('RerUserDates');
+        $this->checkPiwikSettingsFeature();
 
-        if (true === $settings->profiles->getValue() && true === $this->isSuperuser()) {
+        if (true === $this->profiles && true === $this->isSuperuser()) {
             $notification = new Notification(Piwik::translate('RerUserDates_SuperuserMessage'));
             Notification\Manager::notify('RerUserDates_SuperuserMessage', $notification);
         }
@@ -97,15 +105,27 @@ class RerUserDates extends Plugin
     }
 
     /**
+     * Checks if Piwik's Settings Feature is available (since 2.4.0)
+     */
+    protected function checkPiwikSettingsFeature()
+    {
+        if (version_compare(Version::VERSION, '2.4.0-b1', 'ge'))
+        {
+            $settings = new Settings('RerUserDates');
+            $this->profiles = $settings->getSettingValue($settings->profiles);
+        }
+    }
+
+    /**
      * Override for unwanted custom range selections setting to yesterday/day period with warning notification
      */
     public function checkDefaultReportDate()
     {
         Piwik::checkUserIsNotAnonymous();
 
-        $settings = new Settings('RerUserDates');
+        $this->checkPiwikSettingsFeature();
 
-        if (true === $settings->profiles->getValue() && false === $this->isSuperuser()) {
+        if (true === $this->profiles && false === $this->isSuperuser()) {
             $userDates = APIUsersManager::getInstance()->getUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT_DATE);
             $userReport = APIUsersManager::getInstance()->getUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT);
 
