@@ -51,6 +51,7 @@ Sure, you're welcome! Just send a [pull request on Github](https://github.com/Re
 
 - New plugin settings user interface for super admins, some better improvement and few bugs solved.
 - Solved a regression due to a lack of Settings Feature in Piwik's versions below 2.4.0
+- Merged French translation 
 
 ## License
 

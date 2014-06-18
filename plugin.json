@@ -1,6 +1,6 @@
 {
     "name": "RerUserDates",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "license": "GPL v3+",
     "description": "Hide custom date range selection from calendar, avoid users to set ranges in their default profile",
     "homepage": "https://RegioneER.github.io/projects/",
