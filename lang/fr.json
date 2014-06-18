@@ -1,6 +1,11 @@
 {
     "RerUserDates": {
+        "Settings": "Améliorez les performances de Piwik en enlevant les plages de dates et en sélectionnant "hier" par défaut. Vous pouvez également masquer la sélection de plage de dates du calendrier dans les tableaux de bord",
+        "SettingsProfiles": "Enlever les plages de dates par défaut dans les paramètres utilisateurs",
+        "SettingsProfilesDescription": "Les utilisateurs réguliers ne peuvent choisir qu'aujourd'hui , hier, semaine et mois comme valeur par défaut dans leur paramètres utilisateurs. Les utilisateurs ayant déjà des plage de dates sont changés pour 'hier'",
+        "SettingsCalendars": "Masquer 'Plage de dates' dans le calendrier",
+        "SettingsCalendarsDescription": "Permet de retirer les plage de dates dans les calendriers des tableaux de bord.",
         "SuperuserMessage": "Les utilisateurs réguliers ne peuvent sélectionner de plages de dates dans les tableaux de bord ou dans leur profile (RerUserDates)",
-        "DefaultDateMessage": "La plage de dates par défaut est automatiquement mise sur 'hier' puisque les plages de dates sont désactivées"
+        "DefaultDateMessage": "La plage de dates par défaut est maintenant sur 'hier'. Voir paramètres utilisateurs pour choisir une période différente"
     }
 }
