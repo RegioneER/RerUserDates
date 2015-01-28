@@ -112,7 +112,7 @@ class RerUserDates extends Plugin
         if (version_compare(Version::VERSION, '2.4.0-b1', 'ge'))
         {
             $settings = new Settings('RerUserDates');
-            $this->profiles = $settings->getSettingValue($settings->profiles);
+            $this->profiles = $settings->getSetting($settings->profiles);
         }
     }
 
