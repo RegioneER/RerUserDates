@@ -45,13 +45,14 @@ Sure, you're welcome! Just send a [pull request on Github](https://github.com/Re
 
 - Custom date range selection is disabled in the calendar only for regular users. A shorts jQuery snippet hides radio input and submit button.
 - Regular users who chose a range date as their default are now forced to _yesterday_ report just visiting the index page with a warning notification.
-- New French translation by [gaumondp](https://github.com/gaumondp)
+- New French translation by @gaumondp
 
 ### v.1.2
 
 - New plugin settings user interface for super admins, some better improvement and few bugs solved.
 - Solved a regression due to a lack of Settings Feature in Piwik's versions below 2.4.0
 - Merged French translation 
+- Fixed Piwik compatibility with 2.10 from 2.7 by @ThaDafinser in PR #6
 
 ## License
 
