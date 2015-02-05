@@ -14,7 +14,7 @@ Superadmin users setting page remains untouched and administrators will see only
 
 Another plugin's feature is regular users can't select any more a custom range in the calendar but Superadmins still can build reports.
 
-Since Piwik 2.4.0 you can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page available in the super admin user interface.
+You can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page available in the super admin user interface.
 
 This plugin is translated in: English, Italian and French (just send a pull request to include your favourite language, see _Can I contribute_ f.a.q.)
 
@@ -53,6 +53,10 @@ Sure, you're welcome! Just send a [pull request on Github](https://github.com/Re
 - Solved a regression due to a lack of Settings Feature in Piwik's versions below 2.4.0
 - Merged French translation 
 - Fixed Piwik compatibility with 2.10 from 2.7 by @ThaDafinser in PR #6
+
+### v.1.3
+
+- Settings environment breaks compatibility with Piwik versions < 2.8.0, thanks to @ThaDafinser.
 
 ## License
 
