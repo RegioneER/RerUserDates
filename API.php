@@ -30,14 +30,9 @@ class API extends \Piwik\Plugin\API
             return false;
         }
 
-        if (version_compare(Version::VERSION, '2.4.0-b1', 'ge'))
-        {
-            $settings = new Settings('RerUserDates');
+        $settings = new Settings('RerUserDates');
 
-            return $settings->getSettingValue($settings->calendars);
-        }
-
-        return false;
+        return $settings->getSetting('profiles')->getValue();
     }
 
     /**

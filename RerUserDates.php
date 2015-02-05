@@ -13,8 +13,6 @@ use Piwik\Piwik;
 use Piwik\Plugin;
 use Piwik\Notification;
 use Piwik\Plugins\UsersManager\API as APIUsersManager;
-use Piwik\Url;
-use Piwik\Version;
 
 /**
  */
@@ -109,11 +107,8 @@ class RerUserDates extends Plugin
      */
     protected function checkPiwikSettingsFeature()
     {
-        if (version_compare(Version::VERSION, '2.4.0-b1', 'ge'))
-        {
-            $settings = new Settings('RerUserDates');
-            $this->profiles = $settings->getSetting($settings->profiles);
-        }
+        $settings = new Settings('RerUserDates');
+        $this->profiles = $settings->getSetting('profiles')->getValue();
     }
 
     /**
