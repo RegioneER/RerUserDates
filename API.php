@@ -30,9 +30,9 @@ class API extends \Piwik\Plugin\API
             return false;
         }
 
-        $settings = new Settings('RerUserDates');
+        $settings = new SystemSettings;
 
-        return $settings->getSetting('profiles')->getValue();
+        return $settings->profiles->getValue();
     }
 
     /**

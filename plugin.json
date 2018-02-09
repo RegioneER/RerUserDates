@@ -1,28 +1,32 @@
 {
     "name": "RerUserDates",
-    "version": "1.3.0",
+    "version": "2.0.3",
     "license": "GPL v3+",
     "description": "Hide custom date range selection from calendar, avoid users to set ranges in their default profile",
-    "homepage": "https://RegioneER.github.io/projects/",
-    "keywords": [ "calendar", "date", "range", "users", "profiles", "admin", "performance" ],
+    "homepage": "https:\/\/RegioneER.github.io\/projects\/",
+    "keywords": [
+        "calendar",
+        "date",
+        "range",
+        "users",
+        "profiles",
+        "admin",
+        "performance"
+    ],
     "require": {
-        "piwik": ">=2.8.0"
-    },
-    "donate": {
-        "paypal": "supporters@piwik.org",
-        "flattr": "https://flattr.com/thing/131552/Piwik-Web-Analytics-Open-Source",
-        "bitcoin": "http://piwik.org"
+        "piwik": ">=3.0.0, <4.0.0-b1",
+        "php": ">5.6.1"
     },
     "authors": [
         {
             "name": "Pierluigi Tassi",
             "email": "ptassi@regione.emilia-romagna.it",
-            "homepage": "https://github.com/tassoman"
+            "homepage": "https:\/\/github.com\/tassoman"
         },
         {
             "name": "Regione Emilia-Romagna",
             "email": "webmaster@regione.emilia-romagna.it",
-            "homepage": "https://RegioneER.github.io"
+            "homepage": "https:\/\/RegioneER.github.io"
         }
     ]
 }

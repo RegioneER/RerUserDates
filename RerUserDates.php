@@ -1,11 +1,5 @@
 <?php
-/**
- * Piwik - Open source web analytics
- *
- * @link http://piwik.org
- * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
- *
- */
+
 namespace Piwik\Plugins\RerUserDates;
 
 use Piwik\Common;
@@ -19,14 +13,7 @@ use Piwik\Plugins\UsersManager\API as APIUsersManager;
 class RerUserDates extends Plugin
 {
     /**
-     * Default profiles value if Piwik's Settings Feature not available
-     *
-     * @var bool
-     */
-    protected $profiles = true;
-
-    /**
-     * @see Piwik\Plugin::getListHooksRegistered
+     * @see \Piwik\Plugin::getListHooksRegistered
      */
     public function getListHooksRegistered()
     {
@@ -56,10 +43,9 @@ class RerUserDates extends Plugin
     public function noRangedDates(&$dates)
     {
         Piwik::checkUserIsNotAnonymous();
+	    $settings = new SystemSettings;
 
-        $this->checkPiwikSettingsFeature();
-
-        if (true === $this->profiles && false === $this->isSuperuser()) {
+        if (true === $settings->profiles->getValue() && false === $this->isSuperuser()) {
             $dates = array(
                 'today'     => Piwik::translate('General_Today'),
                 'yesterday' => Piwik::translate('General_Yesterday'),
@@ -76,10 +62,9 @@ class RerUserDates extends Plugin
     public function userSettingsNotification()
     {
         Piwik::checkUserIsNotAnonymous();
+	$settings = new SystemSettings;
 
-        $this->checkPiwikSettingsFeature();
-
-        if (true === $this->profiles && true === $this->isSuperuser()) {
+        if (true === $settings->profiles->getValue() && true === $this->isSuperuser()) {
             $notification = new Notification(Piwik::translate('RerUserDates_SuperuserMessage'));
             Notification\Manager::notify('RerUserDates_SuperuserMessage', $notification);
         }
@@ -103,24 +88,14 @@ class RerUserDates extends Plugin
     }
 
     /**
-     * Checks if Piwik's Settings Feature is available (since 2.4.0)
-     */
-    protected function checkPiwikSettingsFeature()
-    {
-        $settings = new Settings('RerUserDates');
-        $this->profiles = $settings->getSetting('profiles')->getValue();
-    }
-
-    /**
      * Override for unwanted custom range selections setting to yesterday/day period with warning notification
      */
     public function checkDefaultReportDate()
     {
         Piwik::checkUserIsNotAnonymous();
+	$settings = new SystemSettings;
 
-        $this->checkPiwikSettingsFeature();
-
-        if (true === $this->profiles && false === $this->isSuperuser()) {
+        if (true === $settings->profiles->getValue() && false === $this->isSuperuser()) {
             $userDates = APIUsersManager::getInstance()->getUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT_DATE);
             $userReport = APIUsersManager::getInstance()->getUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT);
 

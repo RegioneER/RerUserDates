@@ -1,26 +1,28 @@
-# Piwik RerUserDates Plugin
+# Matomo RerUserDates Plugin
 
 ## Description
 
-This [Piwik](http://piwik.org) Plugin lets you hide custom date range selection from calendar for regular users,
-also lets you avoid users setting ranges as default value in their profile.
+This [Matomo](http://Matomo.org) Plugin hides custom date range selection from calendar for regular users and avoids users setting dynamic ranges as default value in their personal profile.
 
-Each time users asks for ranged date reports, Piwik builds it on the fly during user's browsing.
-This slows down your server when there is a load of visits and a large number of tracked websites.
-As you can see this action is resource intensive so when it happens, live websites tracking may become slow or inaccurate.
+When a user asks for a ranged date report, Matomo stats building it on the fly during browsing. This may slow down Matomo installation in case is loaded by visits and you have a large number of tracked websites.
 
-Installing this plugin you remove choices in the field _"Report date to load by default"_ in _User Settings page_ for all regular users.
-Superadmin users setting page remains untouched and administrators will see only a notification about plugin's current behavior.
+Activity is resource intensive so that live tracking may become slow or inaccurate.
 
-Another plugin's feature is regular users can't select any more a custom range in the calendar but Superadmins still can build reports.
+The main feature is regular users can't select any custom range in the calendar, only users having _Superadmins_ privilege still can.
 
-You can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page available in the super admin user interface.
+Second feature is removing dynamic choices in the field _"Report date to load by default"_ in _User Settings page_ for all regular users.
 
-This plugin is translated in: English, Italian and French (just send a pull request to include your favourite language, see _Can I contribute_ f.a.q.)
+Users profiles with _Superadmin_ privilege still untouched and user profiles of _Website Administrators_ will only display a notification about plugin's behavior.
+
+_Superadmin_ can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page  in the web interface.
+
+This plugin came translated in: English, Italian and French. For more languages to come, just file a pull request adding a new `lang/*.json` file in your mother language, (see _Can I contribute_ f.a.q.)
 
 ## Installation
 
-Please, read official [Piwik's documentation](http://piwik.org/faq/plugins/#faq_21) about it.
+You can easily install the plugin by Matomo's Marketplace web interface.
+
+Or please, read official [Matomo's documentation](http://Matomo.org/faq/plugins/#faq_21) about plugins installation.
 
 ## FAQ
 
@@ -29,10 +31,11 @@ Just take a look at _screenshots_ .
 
 __Can I donate to you?__
 Thanks but we can't accept money donations because we're a Government Organization.
-All donation are linked to official Piwik project's accounts, simply help them to help us.
+Just feel free to contribute the source code.
 
 __Can I contribute on development?__
-Sure, you're welcome! Just send a [pull request on Github](https://github.com/RegioneER/RerNewSite/issues)
+New languages translations are welcome!
+Sure, you can, just file a [pull request on Github](https://github.com/RegioneER/RerUserDates/pull)
 
 ## Changelog
 
@@ -50,17 +53,20 @@ Sure, you're welcome! Just send a [pull request on Github](https://github.com/Re
 ### v.1.2
 
 - New plugin settings user interface for super admins, some better improvement and few bugs solved.
-- Solved a regression due to a lack of Settings Feature in Piwik's versions below 2.4.0
-- Merged French translation 
-- Fixed Piwik compatibility with 2.10 from 2.7 by @ThaDafinser in PR #6
+- Solved a regression due to a lack of Settings Feature in Matomo's versions below 2.4.0
+- Merged French translation
+- Fixed Matomo compatibility with 2.10 from 2.7 by @ThaDafinser in PR #6
 
 ### v.1.3
 
-- Settings environment breaks compatibility with Piwik versions < 2.8.0, thanks to @ThaDafinser.
+- Settings environment breaks compatibility with Matomo versions < 2.8.0, thanks to @ThaDafinser.
+
+### v.2.0
+Adding Matomo 3.x plugin compatibility, Piwik 2.x is deprecated and no more supported. Please download v.1.x for older versions.
 
 ## License
 
-[GPL v3](http://www.gnu.org/licenses/gpl-3.0-standalone.html) or later
+This is free software distributed under [GPLv3](http://www.gnu.org/licenses/gpl-3.0-standalone.html) license or later
 
 ## Support
 
