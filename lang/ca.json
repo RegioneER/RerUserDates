@@ -1,0 +1,6 @@
+{
+    "RerUserDates": {
+        "SuperuserMessage": "Els usuaris normals no tenen permisos per escollir un interval de temps per defecte en el seu perfil. Els valors d'interval de temps estan forçats a 'ahir' (RerUserDates)",
+        "DefaultDateMessage": "La teva configuració per defecte de 'rang' s'ha establert a 'ahir'. Pot gestionar un rang diferent a la pàgina de configuracions de l'usuari."
+    }
+}

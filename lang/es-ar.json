@@ -1,0 +1,11 @@
+{
+    "RerUserDates": {
+        "Settings": "Obtené mejores resultados de Matomo quitando los rangos de valores personalizados de los perfiles de usuarios, forzando su valor predeterminado a \"ayer\". También podés ocultar el campo \"Rango de fecha\" del calendario del panel.",
+        "SettingsProfiles": "Quitar los rangos de valores personalizados de los perfiles de usuarios",
+        "SettingsProfilesDescription": "Los usuarios normales solamente pueden elegir los rangos de hoy, ayer, semana, mes como los valores predeterminados en sus perfiles. Los usuarios que ya tienen rangos son forzados a \"ayer\".",
+        "SettingsCalendars": "Ocultar \"Rango de fecha\" en el calendario",
+        "SettingsCalendarsDescription": "Evitar que los usuarios elijan un informe de rango personalizado en el calendario de sus paneles.",
+        "SuperuserMessage": "Los usuarios normales están prohibidos de elegir un valor predeterminado de rango en sus perfiles. Los valores con rangos son forzados a \"ayer\" (RerUserDates).",
+        "DefaultDateMessage": "Tu configuración predeterminada \"range\" de usuario es ahora \"ayer\". Podés visitar la página de configuración de usuario para elegir un rango diferente."
+    }
+}

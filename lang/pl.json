@@ -1,0 +1,11 @@
+{
+    "RerUserDates": {
+        "Settings": "Podnieś wydajność Matomo'a blokując możliwość zmiany zakresu dat dla profili użytkowników wymuszając domyślną wartość 'wczoraj'. Możesz również ukryć pole 'Zakres dat' w kalendarzu Pulpitu.",
+        "SettingsProfiles": "Zablokuj zmianę zakresu dat dla użytkowników z domyślnym profilem",
+        "SettingsProfilesDescription": "Zwykli użytkownicy mają możliwość wybrania dzisiejszego, wczorajszego, tygodniowego, miesięcznego zakresu dat jako domyślnego w profilu. Domyślne ustawienie użytkowników to 'wczoraj'",
+        "SettingsCalendars": "Ukryj 'Zakres dat' w kalendarzu",
+        "SettingsCalendarsDescription": "Zablokuj użytkownikom możliwość wyboru zakresu dat w kalendarzach na ich pulpitach",
+        "SuperuserMessage": "Zwykli użytkownicy nie mają możliwości zmiany zakresu dat. Wymuszona wartość zakresu to 'wczoraj' (RerUserDates)",
+        "DefaultDateMessage": "Domyślne ustawienie 'zakresu' użytkownika, to obecnie 'wczoraj'. Przejdź do strony ustawień użytkownika, aby zmienić zakres dat."
+    }
+}

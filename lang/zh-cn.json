@@ -1,0 +1,11 @@
+{
+    "RerUserDates": {
+        "Settings": "为了提高Piwik的性能，请从用户配置中移除自定义范围，并强制默认值为“昨天”。你也可以在仪表盘日历中隐藏时间范围字段。",
+        "SettingsProfiles": "Remove custom range values as default in users profiles",
+        "SettingsProfilesDescription": "Regular users can only choose today, yesterday, week, month ranges as default value in their profile. Users already with ranges are forced to 'yesterday'",
+        "SettingsCalendars": "在日历中隐藏'日期范围'",
+        "SettingsCalendarsDescription": "阻止用户在其主面板的日历上选择生成自定义范围的报告。",
+        "SuperuserMessage": "Regular users are forbidden to choose a ranged default value in their profile. Ranged values are forced to 'yesterday' (RerUserDates)",
+        "DefaultDateMessage": "Your default user setting 'range' is now 'yesterday'. You can visit user settings page to choose a different range"
+    }
+}
