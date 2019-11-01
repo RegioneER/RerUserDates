@@ -1,0 +1,11 @@
+{
+    "RerUserDates": {
+        "Settings": "Izvucite maksimum performansi iz Matomo-a time što ćete ukloniti korisnički definisane periode iz korisničkih profila nateravši ih da koriste podrazumevano 'juče'. Možete i skloniti 'Period' polje iz kalendara na konzoli.",
+        "SettingsProfiles": "Ukloni korisnički definisane periode iz korisničkih profila",
+        "SettingsProfilesDescription": "Regularni korisnici mogu da izaberu samo danas, juče, nedelja i mesec kao podrazumevani period u svojim profilima. Korisnici koji već imaju periode su prebačeni na 'juče'.",
+        "SettingsCalendars": "Ukloni 'Period' iz kalendara",
+        "SettingsCalendarsDescription": "Sprečava korisnike da izaberu korisnički definisan period za izveštaje u svojim kalendarima na konzoli.",
+        "SuperuserMessage": "Regularnim korisnicima je zabranjeno da izaberu period kao podrazumevanu vrednost u svojim profilima. Korisnici koji već imaju periode su prebačeni na 'juče'.",
+        "DefaultDateMessage": "Vaše podrazumevano podešavanje 'period' je od sada 'juče'. U okviru korisničkih podešavanja možete da izaberete neki drugi period."
+    }
+}

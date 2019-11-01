@@ -1,0 +1,11 @@
+{
+    "RerUserDates": {
+        "Settings": "Krijg betere Matomo prestaties door de mogelijkheid datumbereik bij gebruikers om te zetten naar de 'gisteren'. Het is ook mogelijk om de optie 'datumbereik' te verbergen van de kalender.",
+        "SettingsProfiles": "Verwijder standaard reeks waarden als standaard in gebruikers profielen",
+        "SettingsProfilesDescription": "Standaard gebruikers kunnen alleen kiezen uit, vandaag, gisteren, week en maand periodes als standaard waarde in hun profiel. Gebruikers die al een periode hebben, worden standaard op 'gisteren' gezet.",
+        "SettingsCalendars": "Verberg 'Datumbereik' in de kalender",
+        "SettingsCalendarsDescription": "Vermijd dat gebruikers een standaard bereik kunnen selecteren in hun dashboard kalender.",
+        "SuperuserMessage": "Standaard gebruikers kunnen de standaard waarde voor periode selectie niet wijzigen in hun profiel. Deze periode waarde staat standaard op 'gisteren' (RerUserDates)",
+        "DefaultDateMessage": "Je standaard gebruikers instellingen op periode is nu 'gisteren'. Je kan je instelling aanpassen op de persoonlijke instellingen pagina."
+    }
+}

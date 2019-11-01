@@ -1,11 +1,11 @@
 {
     "RerUserDates": {
-        "Settings": "Per migliorare le performance di Piwik puoi rimuovere i range personalizzati dagli utenti nel loro profilo default ed impostarli a 'Ieri'. Puoi anche rimuovere il campo 'Intervallo di date' dal calendario.",
-        "SettingsProfiles": "Rimuovi i range personalizzati nelle impostazioni utente di default",
-        "SettingsProfilesDescription": "Gli utenti possono scegliere soltanto, ieri, oggi, settimana, mese, anno corrente. Nel caso abbiano già scelto un range, vengono forzati a 'Ieri'",
+        "Settings": "Per migliorare le prestazioni di Matomo puoi rimuovere gli intervalli personalizzati degli utenti nel loro profilo predefinito e impostarli a 'Ieri'. Puoi anche nascondere il campo 'Intervallo di date' dal calendario della dashboard.",
+        "SettingsProfiles": "Rimuovi gli intervalli personalizzati nelle impostazioni predefinite dell'utente",
+        "SettingsProfilesDescription": "Gli utenti possono soltanto scegliere gli intervalli, oggi, ieri, settimana, mese come valore predefinito. Nel caso abbiano già scelto un intervallo, vengono forzati a 'ieri'",
         "SettingsCalendars": "Nascondi 'Intervallo di date' dal calendario",
-        "SettingsCalendarsDescription": "Gli utenti eviteranno di generare report su periodi personalizzati e saranno limitati ai report standard: giorno, settimana, mese e anno.",
-        "SuperuserMessage": "Agli utenti non è permesso di selezionare un range di date personalizzato, i profili impostati in precedenza ora vengono forzati a 'ieri'. (RerUserDates)",
-        "DefaultDateMessage": "L'intervallo di default per i report è stato impostato a 'ieri'. Puoi modificare il valore nella pagina Impostazioni Utente"
+        "SettingsCalendarsDescription": "Evita che gli utenti scelgano un report con intervallo di date personalizzato nel calendario della loro dashboard.",
+        "SuperuserMessage": "Agli utenti comuni non è consentito di scegliere un intervallo predefinito nel loro profilo. Gli intervalli sono forzati a 'ieri' (RerUserDates)",
+        "DefaultDateMessage": "L'intervallo predefinito per i report è stato impostato a 'ieri'. Puoi modificarne il valore nella pagina Impostazioni Utente"
     }
 }

@@ -1,0 +1,11 @@
+{
+    "RerUserDates": {
+        "Settings": "Získejte lepší výkon odstraněním vlastních rozsahů u profilů uživatelů a vynuťte pro ně ve výchozím stavu 'včera'. Také můžete skrýt pole rozsah z kalendáře na nástěnce.",
+        "SettingsProfiles": "Odstranit vlastní rozsahy dat jako výchozí z uprofilů uživatelů",
+        "SettingsProfilesDescription": "Obyčejní uživatelé mohou ve svém profilu zvolit pouze rozsah dnes, včera, týden a měsíc jako výchozí hodnotu. Uživatelům s rozsahy bude nastaveno 'včera'.",
+        "SettingsCalendars": "Skrýt 'rozsah dat' v kalendáři",
+        "SettingsCalendarsDescription": "Nedovolit uživatelům vybrat vlastní rozsah v hlášení pomocí kalendáře na nástěnce",
+        "SuperuserMessage": "Obyčejní uživatelé si nemohou zvolit vlastní rozsah u rozsahových hodnot ve svém profilu, musí si zvolit 'včera' (RelUserDates).",
+        "DefaultDateMessage": "Vaše výchozí nastavení 'rozsah' je nyní 'včera'. Můžete navštívit stránku s profilem a tam ho změnit."
+    }
+}
