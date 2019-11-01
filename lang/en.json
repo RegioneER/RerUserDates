@@ -1,6 +1,6 @@
 {
     "RerUserDates": {
-        "Settings": "Get better Piwik's performances removing custom range values from users profiles forcing their default to 'yesterday'. You can also hide 'Date Range' field from dashboard's calendar.",
+        "Settings": "Get better Matomo's performances removing custom range values from users profiles forcing their default to 'yesterday'. You can also hide 'Date Range' field from dashboard's calendar.",
         "SettingsProfiles": "Remove custom range values as default in users profiles",
         "SettingsProfilesDescription": "Regular users can only choose today, yesterday, week, month ranges as default value in their profile. Users already with ranges are forced to 'yesterday'",
         "SettingsCalendars": "Hide 'Date range' in the calendar",
