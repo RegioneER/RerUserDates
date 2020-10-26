@@ -12,10 +12,7 @@ use Piwik\Plugins\UsersManager\API as APIUsersManager;
  */
 class RerUserDates extends Plugin
 {
-    /**
-     * @see \Piwik\Plugin::getListHooksRegistered
-     */
-    public function getListHooksRegistered()
+    public function registerEvents()
     {
         return array(
             'AssetManager.getJavaScriptFiles'      => 'getJsFiles',

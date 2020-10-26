@@ -5,19 +5,27 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-(function (require, $) {
-    var ajaxHelper = require('ajaxHelper');
-    var ajax = new ajaxHelper();
-    ajax.setTimeout(5000);
-    ajax.setUrl("index.php?module=API&method=RerUserDates.getSettingsCalendars&format=JSON");
-    ajax.setCallback(function (response) {
-        if (true == response.value)
-        {
-            if (true == response.value && false == piwik.hasSuperUserAccess)
+$(document).ready(function (){
+    (function (require, $) {
+        var ajaxHelper = require('ajaxHelper');
+        var ajax = new ajaxHelper();
+        ajax.setUrl('index.php');
+        ajax.addParams({
+            module: "API",
+            method: "RerUserDates.getSettingsCalendars",
+            format: "JSON"           
+        }, 'GET');
+        ajax.setTimeout(5000);
+        ajax.setCallback(function (response) {
+            console.log("RerUserDates: GET", response.value)
+            if (true == response.value)
             {
-                $('#otherPeriods').find('p:last-of-type').remove();
+                if (true == response.value && false == piwik.hasSuperUserAccess)
+                {
+                    $('#otherPeriods').find('p').last().remove();
+                }
             }
-        }
-    });
-    ajax.send();
-})(require, jQuery);
+        });
+        ajax.send();
+    })(require, jQuery);    
+})

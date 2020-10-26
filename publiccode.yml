@@ -1,0 +1,76 @@
+# This repository adheres to the publiccode.yml standard by including this
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: "0.2"
+categories:
+  - seo
+  - data-analytics
+  - data-visualization
+dependsOn:
+  open:
+    - name: Matomo
+      optional: false
+      version: ""
+      versionMax: ""
+      versionMin: "3.0"
+description:
+  it:
+    features:
+      - evita il sovraccarico dell'istanza
+      - configurabile da interfaccia amministrativa
+    genericName: plugin per Matomo
+    longDescription: >
+      Questo **plugin per Matomo** permette di rimuovere i «custom range» agli utenti
+      al fine di evitare il conteggio eccessivo di report
+
+      I super amministratori possono decidere di impedire la generazione di report personalizzati agli utenti.
+
+      Le impostazioni sono configurabili tramite interfaccia amministrativa.
+
+      Disponibile sia nel catalogo del riuso, sia nel marketplace di Matomo.
+    shortDescription: >-
+      Plugin per Matomo utile per impedire la generazione di report personalizzati
+    screenshots:
+      - screenshots/RerUserDates-cal.png
+      - screenshots/RerUserDates-settings.png
+      - screenshots/RerUserDates.png
+developmentStatus: stable
+it:
+  riuso:
+    codiceIPA: r_emiro
+  conforme:
+    gdpr: true
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: true
+    modelloInteroperabilita: false
+  countryExtensionVersion: "0.2"
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+legal:
+  license: GPL-3.0-or-later
+  mainCopyrightOwner: Regione Emilia-Romagna
+  repoOwner: Regione Emilia-Romagna
+localisation:
+  availableLanguages:
+    - it
+    - en
+    - fr
+  localisationReady: true
+maintenance:
+  contacts:
+    - affiliation: Regione Emilia-Romagna
+      email: webmaster@regione.emilia-romagna.it
+      name: Sara Turra
+  type: community
+name: Rer Intranet Subnetwork
+platforms:
+  - web
+releaseDate: "2020-10-26"
+softwareType: addon
+url: "https://github.com/RegioneER/RerUserDates"
+usedBy:
+  - Regione Emilia-Romagna
