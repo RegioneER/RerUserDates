@@ -1,8 +1,8 @@
 {
-    "name": "Hide custom ranges",
+    "name": "Hide custom period ranges",
     "version": "3.0.0",
     "license": "GPL v3+",
-    "description": "Hide custom date range selection from calendar, avoid users to set ranges in their default profile",
+    "description": "Hide custom period date ranges selection from calendar, avoid users to set ranges in their default profile",
     "homepage": "https://github.com/RegioneER/RerUserDates",
     "keywords": [
         "calendar",
