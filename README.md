@@ -1,5 +1,12 @@
 # Matomo RerUserDates Plugin
 
+[![Catalogo del riuso software](https://img.shields.io/badge/Riuso%20AGID-Software-%230076e3)](https://developers.italia.it/it/search?type=reuse_software)
+[![Matomo version](https://img.shields.io/badge/matomo-4.x--dev-success)](https://github.com/matomo-org/matomo)
+[![Matomo version](https://img.shields.io/badge/matomo-3.x--dev-success)](https://github.com/matomo-org/matomo)
+[![GitHub license](https://img.shields.io/github/license/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/issues)
+[![GitHub forks](https://img.shields.io/github/forks/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/network)
+
 ## Description
 
 This [Matomo](http://Matomo.org) Plugin hides custom date range selection from calendar for regular users and avoids users setting dynamic ranges as default value in their personal profile.
@@ -14,7 +21,7 @@ Second feature is removing dynamic choices in the field _"Report date to load by
 
 Users profiles with _Superadmin_ privilege still untouched and user profiles of _Website Administrators_ will only display a notification about plugin's behavior.
 
-_Superadmin_ can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page  in the web interface.
+_Superadmin_ can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page in the web interface.
 
 This plugin came translated in: English, Italian and French. For more languages to come, just file a pull request adding a new `lang/*.json` file in your mother language, (see _Can I contribute_ f.a.q.)
 
@@ -26,29 +33,26 @@ Or please, read official [Matomo's documentation](http://Matomo.org/faq/plugins/
 
 ## FAQ
 
-__I would like to see a demonstration...__
+**I would like to see a demonstration...**
 Just take a look at _screenshots_ .
 
-__Can I donate to you?__
+**Can I donate to you?**
 Thanks but we can't accept money donations because we're a Government Organization.
 Just feel free to contribute the source code.
 
-__Can I contribute on development?__
+**Can I contribute on development?**
 New languages translations are welcome!
 Sure, you can, just file a [pull request on Github](https://github.com/RegioneER/RerUserDates/pull)
 
 ## Changelog
 
-### v1.0
+### v.2.0
 
- - First release and Marketplace integration
- - User Manager screen shot and better readme documentation
+Adding Matomo 3.x plugin compatibility, Piwik 2.x is deprecated and no more supported. Please download v.1.x for older versions.
 
-### v1.1
+### v.1.3
 
-- Custom date range selection is disabled in the calendar only for regular users. A shorts jQuery snippet hides radio input and submit button.
-- Regular users who chose a range date as their default are now forced to _yesterday_ report just visiting the index page with a warning notification.
-- New French translation by @gaumondp
+- Settings environment breaks compatibility with Matomo versions < 2.8.0, thanks to @ThaDafinser.
 
 ### v.1.2
 
@@ -57,12 +61,16 @@ Sure, you can, just file a [pull request on Github](https://github.com/RegioneER
 - Merged French translation
 - Fixed Matomo compatibility with 2.10 from 2.7 by @ThaDafinser in PR #6
 
-### v.1.3
+### v1.1
 
-- Settings environment breaks compatibility with Matomo versions < 2.8.0, thanks to @ThaDafinser.
+- Custom date range selection is disabled in the calendar only for regular users. A shorts jQuery snippet hides radio input and submit button.
+- Regular users who chose a range date as their default are now forced to _yesterday_ report just visiting the index page with a warning notification.
+- New French translation by @gaumondp
 
-### v.2.0
-Adding Matomo 3.x plugin compatibility, Piwik 2.x is deprecated and no more supported. Please download v.1.x for older versions.
+### v1.0
+
+- First release and Marketplace integration
+- User Manager screen shot and better readme documentation
 
 ## License
 
