@@ -1,6 +1,6 @@
 {
-    "name": "ReruserdatesHideCustomRanges",
-    "version": "3.0.2",
+    "name": "RerUserDates",
+    "version": "3.0.3",
     "license": "GPL v3+",
     "description": "Limit report generation by hiding custom period date ranges selection in the calendar, also avoid users to set custom ranges in their profile",
     "homepage": "https://github.com/RegioneER/RerUserDates",
