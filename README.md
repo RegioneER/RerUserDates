@@ -1,6 +1,6 @@
-# «Hide Custom Ranges» is a RerUserDates plugin for Matomo Analytics
+# RerUserDates plugin for Matomo Analytics
 
-[![Catalogo del riuso software](https://img.shields.io/badge/Riuso%20AGID-Software-%230076e3)](https://developers.italia.it/it/search?type=reuse_software)
+[![Catalogo del riuso software](https://img.shields.io/badge/Riuso%20AGID-Software-%230076e3)](https://developers.italia.it/it/pa/r_emiro)
 [![Matomo version](https://img.shields.io/badge/matomo-4.x--dev-success)](https://github.com/matomo-org/matomo)
 [![Matomo version](https://img.shields.io/badge/matomo-3.x--dev-success)](https://github.com/matomo-org/matomo)
 [![GitHub license](https://img.shields.io/github/license/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/blob/master/LICENSE)
@@ -9,7 +9,7 @@
 
 ## Description
 
-This [Matomo](http://Matomo.org) Plugin hides custom date range selection from calendar for regular users and avoids users setting dynamic ranges as default value in their personal profile.
+This [Matomo](https://matomo.org) Plugin hides custom date range selection from calendar for regular users and avoids users setting dynamic ranges as default value in their personal profile.
 
 When a user asks for a ranged date report, Matomo stats building it on the fly during browsing. This may slow down Matomo installation in case is loaded by visits and you have a large number of tracked websites.
 
@@ -29,7 +29,7 @@ This plugin came translated in: English, Italian and French. For more languages 
 
 You can easily install the plugin by Matomo's Marketplace web interface.
 
-Or please, read official [Matomo's documentation](http://Matomo.org/faq/plugins/#faq_21) about plugins installation.
+Or please, read official [Matomo's documentation](https://matomo.org/faq/plugins/#faq_21) about plugins installation.
 
 ## FAQ
 

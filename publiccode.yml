@@ -21,16 +21,19 @@ description:
       - configurabile da interfaccia amministrativa
     genericName: plugin per Matomo
     longDescription: >
-      Questo **plugin per Matomo** permette di rimuovere i «custom range» agli utenti
-      al fine di evitare il conteggio eccessivo di report
+      Questo **plugin per Matomo** permette di impedire che gli utenti standard generino report personalizzati.
 
-      I super amministratori possono decidere di impedire la generazione di report personalizzati agli utenti.
+      Il plugin rimuove la possibiltà di scegliere un «intervallo di date» dal calendario agli utenti standard.
 
-      Le impostazioni sono configurabili tramite interfaccia amministrativa.
+      Il fine è quello di evitare che Matomo impieghi risorse, necessarie al tracking, per generare report che spesso diventano «usa e getta».
 
-      Disponibile sia nel catalogo del riuso, sia nel marketplace di Matomo.
+      In questo modo Matomo genera soltanto i report richiesti. Se hai attivato le *crontab*, esso genera soltanto report per i periodi prestabiliti (giorno, mese, anno).
+
+      Le impostazioni sono facilmente configurabili dai super amministratori, tramite interfaccia web.
+
+      Questo plugin è disponibile sia nel [catalogo AGID, software a riuso](https://developers.italia.it/it/pa/r_emiro), sia nel [marketplace di Matomo](https://plugins.matomo.org/).
     shortDescription: >-
-      Plugin per Matomo utile per impedire la generazione di report personalizzati
+      Plugin per Matomo, utile per impedire la generazione di report personalizzati ed evitare sovraccarico al server
     screenshots:
       - screenshots/RerUserDates-cal.png
       - screenshots/RerUserDates-settings.png
