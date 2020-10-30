@@ -3,6 +3,12 @@
 # More info at https://github.com/italia/publiccode.yml
 
 publiccodeYmlVersion: "0.2"
+name: Rer User Dates
+platforms:
+  - web
+releaseDate: "2020-10-26"
+softwareType: addon
+url: "https://github.com/RegioneER/RerUserDates"
 categories:
   - seo
   - data-analytics
@@ -69,11 +75,5 @@ maintenance:
       email: webmaster@regione.emilia-romagna.it
       name: Sara Turra
   type: community
-name: Rer Intranet Subnetwork
-platforms:
-  - web
-releaseDate: "2020-10-26"
-softwareType: addon
-url: "https://github.com/RegioneER/RerUserDates"
 usedBy:
   - Regione Emilia-Romagna
