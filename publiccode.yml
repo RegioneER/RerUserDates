@@ -3,12 +3,6 @@
 # More info at https://github.com/italia/publiccode.yml
 
 publiccodeYmlVersion: "0.2"
-name: Rer User Dates
-platforms:
-  - web
-releaseDate: "2020-10-26"
-softwareType: addon
-url: "https://github.com/RegioneER/RerUserDates"
 categories:
   - seo
   - data-analytics
@@ -23,31 +17,48 @@ dependsOn:
 description:
   it:
     features:
+      - limita le caratteristiche della interfaccia utente
       - evita il sovraccarico dell'istanza
       - configurabile da interfaccia amministrativa
-    genericName: plugin per Matomo
-    longDescription: >
-      Questo **plugin per Matomo** permette di impedire che gli utenti standard generino report personalizzati.
+    genericName: plugin
+    localisedName: Rer User Dates
+    longDescription: |
+      Questo **plugin per Matomo** permette di impedire che gli utenti standard
+      generino report personalizzati. 
 
-      Il plugin rimuove la possibiltà di scegliere un «intervallo di date» dal calendario agli utenti standard.
 
-      Il fine è quello di evitare che Matomo impieghi risorse, necessarie al tracking, per generare report che spesso diventano «usa e getta».
+      Il plugin rimuove la possibiltà di scegliere un «intervallo di date» dal
+      calendario agli utenti standard. 
 
-      In questo modo Matomo genera soltanto i report richiesti. Se hai attivato le *crontab*, esso genera soltanto report per i periodi prestabiliti (giorno, mese, anno).
 
-      Le impostazioni sono facilmente configurabili dai super amministratori, tramite interfaccia web.
+      Il fine è quello di evitare che Matomo impieghi risorse, necessarie al
+      tracking, per generare report che spesso diventano «usa e getta». In
+      questo modo Matomo genera soltanto i report richiesti. 
 
-      Questo plugin è disponibile sia nel [catalogo AGID, software a riuso](https://developers.italia.it/it/pa/r_emiro), sia nel [marketplace di Matomo](https://plugins.matomo.org/).
-    shortDescription: >-
-      Plugin per Matomo, utile per impedire la generazione di report personalizzati ed evitare sovraccarico al server
+
+      Se hai attivato le _crontab_, esso genera soltanto report per i periodi
+      prestabiliti (giorno, mese, anno). 
+
+
+      Le impostazioni sono facilmente configurabili dai super amministratori,
+      tramite interfaccia web. 
+
+
+      Questo plugin è disponibile sia nel [catalogo AGID, software a
+      riuso](https://developers.italia.it/it/pa/r_emiro), sia nel [marketplace
+      di Matomo](https://plugins.matomo.org/).
     screenshots:
-      - screenshots/RerUserDates-cal.png
-      - screenshots/RerUserDates-settings.png
-      - screenshots/RerUserDates.png
+      - |-
+        screenshots/RerUserDates-cal.png
+      - |-
+        screenshots/RerUserDates-settings.png
+      - |-
+        screenshots/RerUserDates.png
+    shortDescription: |-
+      Plugin per Matomo, utile per impedire la generazione di report
+      personalizzati ed evitare sovraccarico al server
 developmentStatus: stable
 it:
-  riuso:
-    codiceIPA: r_emiro
   conforme:
     gdpr: true
     lineeGuidaDesign: false
@@ -59,6 +70,8 @@ it:
     cie: false
     pagopa: false
     spid: false
+  riuso:
+    codiceIPA: r_emiro
 legal:
   license: GPL-3.0-or-later
   mainCopyrightOwner: Regione Emilia-Romagna
@@ -75,5 +88,11 @@ maintenance:
       email: webmaster@regione.emilia-romagna.it
       name: Sara Turra
   type: community
+name: RerUserDates
+platforms:
+  - web
+releaseDate: "2020-10-26"
+softwareType: addon
+url: "https://github.com/RegioneER/RerUserDates"
 usedBy:
   - Regione Emilia-Romagna
