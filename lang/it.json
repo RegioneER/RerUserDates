@@ -1,6 +1,6 @@
 {
     "RerUserDates": {
-        "Settings": "Per migliorare le prestazioni di Matomo puoi rimuovere gli intervalli personalizzati degli utenti nel loro profilo predefinito e impostarli a 'Ieri'. Puoi anche nascondere il campo 'Intervallo di date' dal calendario della dashboard.",
+        "Settings": "Ottieni prestazioni di Matomo migliori togliendo gli intervalli di valori personalizzati dai profili utente forzando a 'ieri' il loro valore predefinito. Puoi anche nascondere il campo 'Intervallo di Date' dal calendario della dashboard.",
         "SettingsProfiles": "Rimuovi gli intervalli personalizzati nelle impostazioni predefinite dell'utente",
         "SettingsProfilesDescription": "Gli utenti possono soltanto scegliere gli intervalli, oggi, ieri, settimana, mese come valore predefinito. Nel caso abbiano già scelto un intervallo, vengono forzati a 'ieri'",
         "SettingsCalendars": "Nascondi 'Intervallo di date' dal calendario",

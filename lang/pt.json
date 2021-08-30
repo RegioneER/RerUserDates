@@ -1,6 +1,6 @@
 {
     "RerUserDates": {
-        "Settings": "Obtenha melhores desempenhos no Piwik removendo os valores de intervalos personalizados dos perfis de utilizador, forçando as respetivas predefinições para 'ontem'. Pode também ocultar o campo 'Intervalo de datas' do calendário do painel.",
+        "Settings": "Obtenha um melhor desempenho no Matomo removendo os valores de intervalos personalizados dos perfis de utilizador, forçando as respetivas predefinições para 'ontem'. Pode também ocultar o campo 'Intervalo de datas' do calendário do painel.",
         "SettingsProfiles": "Remover os valores de intervalos personalizados dos perfis de utilizador",
         "SettingsProfilesDescription": "Os utilizadores comuns apenas podem escolher os intervalos hoje, ontem, semana, mês como o valor predefinido nos respetivos perfis. Utilizadores já com intervalos definidos são forçados para 'ontem'",
         "SettingsCalendars": "Ocultar o 'Intervalo de datas' no calendário",

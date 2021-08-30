@@ -1,6 +1,6 @@
 {
     "RerUserDates": {
-        "Settings": "Përmirësoni punimin e Matomo-s duke hequr vlera vetjake intervalesh nga profile përdoruesish, duke e kthyer parazgjedhjen e tyre te 'dje'. Mund edhe ta fshihni fushën 'Interval Datash' prej kalendarit të pultit.",
+        "Settings": "Përmirësoni punimin e Matomo-s duke hequr vlera intervalesh vetjake nga profile përdoruesish, duke e kthyer parazgjedhjen e tyre te 'dje'. Mund edhe ta fshihni fushën 'Interval Datash' prej kalendarit të pultit.",
         "SettingsProfiles": "Hiqi vlerat vetjake intervalesh si parazgjedhje nga profile përdoruesish",
         "SettingsProfilesDescription": "Si vlerë parazgjedhje në profilet e tyre përdoruesit e rregullt mund të zgjedhin vetëm intervalet sot, dje, javë, muaj. Përdoruesit që kanë tashmë intervale kalohen te 'dje'",
         "SettingsCalendars": "Fshihe në kalendar 'Interval datash'",

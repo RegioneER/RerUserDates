@@ -1,6 +1,6 @@
 {
     "RerUserDates": {
-        "Settings": "Få bättre Matomo prestanda genom att ta bort anpassade intervallvärden från användarnas profiler och tvinga standardvärdet till \"igår\". Du kan också dölja \"Datumintervall\" fältet från instrumentpanelens kalender.",
+        "Settings": "Förbättra Matomos prestanda genom att ta bort anpassade intervallvärden från användarprofiler som tvingar sin standard till \"igår\". Du kan också dölja fältet 'Datumintervall' från instrumentpanelens kalender.",
         "SettingsProfiles": "Ta bort anpassade intervallvärden som standard i användarnas profiler",
         "SettingsProfilesDescription": "Vanliga användare kan bara välja idag, igår, vecka och månadsintervall som deras standardvärde i sin profil. Användare som redan använder intervaller tvingas till 'igår'",
         "SettingsCalendars": "Göm \"Datumintervall\" i kalendern",

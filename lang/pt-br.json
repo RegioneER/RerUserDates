@@ -1,9 +1,9 @@
 {
     "RerUserDates": {
-        "Settings": "Obtenha melhores performances do Matomo removendo valores de intervalo personalizados a partir dos perfis de usuários, forçando o padrão para \"ontem\". Você também pode ocultar o campo 'Intervalo de Datas' no calendário do painel.",
+        "Settings": "Consiga uma melhor performance do Matomo removendo valores de intervalo personalizados dos perfis de usuários forçando o padrão para 'ontem'. Você também pode ocultar o campo 'Intervalo de datas' do calendário do painel.",
         "SettingsProfiles": "Remover valores de intervalo personalizados como padrão nos perfis de usuários",
         "SettingsProfilesDescription": "Usuários regulares só podem escolher os intervalos hoje, ontem, semana e mês como valor padrão no perfil. Usuários que já tenham intervalos são forçados para 'ontem'",
-        "SettingsCalendars": "Ocultar 'Intervalo de Datas' no calendário",
+        "SettingsCalendars": "Ocultar 'Intervalo de datas' no calendário",
         "SettingsCalendarsDescription": "Evite que os usuários escolham um relatório de intervalo personalizado no calendário do painel.",
         "SuperuserMessage": "Usuários regulares estão proibidos de escolher um valor padrão de intervalo em seus perfis. Os valores de intervalos são forçados para 'ontem' (RerUserDates)",
         "DefaultDateMessage": "Sua configuração padrão de 'intervalo' agora é 'ontem'. Você pode visitar a página de configurações do usuário para escolher um intervalo diferente"

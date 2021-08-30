@@ -1,6 +1,6 @@
 {
     "RerUserDates": {
-        "Settings": "Obtenga mejor rendimiento de Matomo quitando, de los perfiles de usuarios, los valores personalizados de intervalo de tiempo, forzando así que su valor predeterminado sea 'ayer'. Puede también ocultar el campo 'Intervalo de fecha' del calendario del Panel de control.",
+        "Settings": "Obtén mejor rendimiento en Matomo al remover valores de rango personalizados de los perfiles de usuarios forzando su predeterminado a 'ayer'. También puede esconder el campo 'Rango de Fechas' del calendario del tablero.",
         "SettingsProfiles": "Quitar de los perfiles de usuario, de manera predeterminada, los valores personalizados de intervalo de tiempo.",
         "SettingsProfilesDescription": "Los usuarios normales solo pueden elegir hoy, ayer, semana e intervalos de meses como valor predeterminado en su perfil. Usuarios que actualmente usen intervalos de tiempo serán forzados a 'ayer'",
         "SettingsCalendars": "Ocultar 'Intervalo de fechas' en el calendario",
