@@ -1,6 +1,6 @@
 {
     "RerUserDates": {
-        "Settings": "Améliorez les performances de Matomo en enlevant les plages de dates et en sélectionnant 'hier' par défaut. Vous pouvez également masquer la sélection de plage de dates du calendrier dans les tableaux de bord",
+        "Settings": "Améliorez les performances de Matomo en supprimant les valeurs de plage personnalisées des profils d'utilisateurs, forçant leur valeur par défaut à «hier». Vous pouvez également masquer le champ \"Plage de dates\" du calendrier du tableau de bord.",
         "SettingsProfiles": "Enlever les plages de dates par défaut dans les paramètres utilisateurs",
         "SettingsProfilesDescription": "Les utilisateurs réguliers peuvent seulement choisir aujourd'hui, hier, semaine et mois comme valeur par défaut dans leur paramètres utilisateurs. Les utilisateurs ayant déjà des plages de dates sont changés à 'hier'",
         "SettingsCalendars": "Masquer 'Plage de dates' dans le calendrier",

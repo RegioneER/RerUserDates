@@ -1,6 +1,6 @@
 {
     "RerUserDates": {
-        "Settings": "Matomo başarımını arttırmak için kullanıcı profillerinden özel tarih aralıkları kaldırılıp varsayılan değer 'dün' olarak atanabilir. Ayrıca pano takviminden 'Tarih Aralığı' alanı kaldırılabilir.",
+        "Settings": "Kullanıcı profillerinden özel değer aralıklarını kaldırıp varsayılan olarak 'dün' değerinin kullanılması ile daha iyi Matomo başarımı elde edebilirsiniz. Ayrıca pano takvimindeki 'Tarih Aralığı' alanını da gizleyebilirsiniz.",
         "SettingsProfiles": "Kullanıcı profillerinden özel tarih aralığı varsayılan olarak kaldırılsın",
         "SettingsProfilesDescription": "Normal kullanıcılar profillerinden varsayılan olarak yalnız bugün, dün, hafta ve ay tarih aralıklarını seçebilir. Özel tarih aralığı kullanan kullanıcılar 'dün' olarak değiştirilir.",
         "SettingsCalendars": "Takvimde 'Tarih Aralığı' alanı gizlensin",

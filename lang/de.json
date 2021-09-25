@@ -1,6 +1,6 @@
 {
     "RerUserDates": {
-        "Settings": "Erhöhen Sie die Performance von Matomo, indem benutzerdefinierte Zeitspannen in den Benutzerprofilen normaler Benutzer entfernt und auf 'gestern' gestellt werden. Sie können auch die Option 'Zeitspanne' im Kalender des Dashboards verbergen.",
+        "Settings": "Erhöhen Sie die Performance von Matomo, indem benutzerdefinierte Zeitspannen aus den Benutzerprofilen normaler Benutzer entfernt und auf 'gestern' gestellt werden. Sie können auch die Option 'Zeitspanne' im Kalender des Dashboards verbergen.",
         "SettingsProfiles": "Standardmäßig benutzerdefinierte Zeitspannen von Benutzerprofilen entfernen",
         "SettingsProfilesDescription": "Normale Benutzer können in deren Profil als Standardzeitbereich nur heute, gestern, Woche, Monat wählen. Bei Benutzern, die bereits einen anderen Wert definiert haben, wird 'gestern' eingestellt.",
         "SettingsCalendars": "Verberge \"Zeitspanne\" im Kalender",
