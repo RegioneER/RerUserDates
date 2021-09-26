@@ -1,11 +1,8 @@
 {
     "RerUserDates": {
         "Settings": "Matomo的性能更高，可从用户配置文件中删除自定义范围值，从而将其默认值设为“昨天”。 您还可以从信息中心的日历中隐藏“日期范围”字段。",
-        "SettingsProfiles": "Remove custom range values as default in users profiles",
-        "SettingsProfilesDescription": "Regular users can only choose today, yesterday, week, month ranges as default value in their profile. Users already with ranges are forced to 'yesterday'",
         "SettingsCalendars": "在日历中隐藏'日期范围'",
         "SettingsCalendarsDescription": "阻止用户在其主面板的日历上选择生成自定义范围的报告。",
-        "SuperuserMessage": "Regular users are forbidden to choose a ranged default value in their profile. Ranged values are forced to 'yesterday' (RerUserDates)",
-        "DefaultDateMessage": "Your default user setting 'range' is now 'yesterday'. You can visit user settings page to choose a different range"
+        "SettingsProfilesDescription": "Regular users can only choose today, yesterday, week, month ranges as default value in their profile. Users already with ranges are forced to 'yesterday'"
     }
 }
