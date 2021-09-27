@@ -23,7 +23,9 @@ Users profiles with _Superadmin_ privilege still untouched and user profiles of 
 
 _Superadmin_ can enable or disable the two features independently by clicking checkboxes in the plugin's configuration page in the web interface.
 
-This plugin came translated in: English, Italian and French. For more languages to come, just file a pull request adding a new `lang/*.json` file in your mother language, (see _Can I contribute_ f.a.q.)
+This plugin came translated in every language available in the [Weblate app](https://hosted.weblate.org/projects/matomo/communityplugin-reruserdates/).
+
+Using that application, can officially contribute easily by adding your mothertongue language, or by editing missing strings. 
 
 ## Installation
 
@@ -41,10 +43,14 @@ Thanks but we can't accept money donations because we're a Government Organizati
 Just feel free to contribute the source code.
 
 **Can I contribute on development?**
-New languages translations are welcome!
 Sure, you can, just file a [pull request on Github](https://github.com/RegioneER/RerUserDates/pull)
 
 ## Changelog
+
+### v4.0
+
+- Adding Weblate translations and Weblate repository syncronization.
+- Bumping mayor version to match Matomo's. 
 
 ### v3.0
 

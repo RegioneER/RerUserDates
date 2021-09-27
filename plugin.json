@@ -1,6 +1,6 @@
 {
     "name": "RerUserDates",
-    "version": "3.0.3",
+    "version": "4.0.0",
     "license": "GPL v3+",
     "description": "Limit report generation by hiding custom period date ranges selection in the calendar, also avoid users to set custom ranges in their profile",
     "homepage": "https://github.com/RegioneER/RerUserDates",
@@ -15,7 +15,7 @@
     ],
     "require": {
         "piwik": ">=4.0.0-b1, <5.0.0-b1",
-        "php": ">=7.3.23"
+        "php": ">=7.3.0"
     },
     "authors": [
         {
