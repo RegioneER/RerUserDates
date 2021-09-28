@@ -1,11 +1,11 @@
 {
     "RerUserDates": {
-        "Settings": "Kullanıcı profillerinden özel değer aralıklarını kaldırıp varsayılan olarak 'dün' değerinin kullanılması ile daha iyi Matomo başarımı elde edebilirsiniz. Ayrıca pano takvimindeki 'Tarih Aralığı' alanını da gizleyebilirsiniz.",
+        "DefaultDateMessage": "'Tarih aralığı' olan varsayılan kullanıcı ayarınız 'dün' olarak değiştirildi. Kullanıcı ayarlarınız bölümüne giderek farklı bir aralık seçebilirsiniz",
+        "Settings": "Kullanıcı profillerinden özel değer aralıklarını kaldırıp varsayılan olarak 'dün' değerinin kullanılması ile daha iyi Matomo başarımı elde edebilirsiniz. Ayrıca pano takvimindeki 'Tarih aralığı' alanını da gizleyebilirsiniz.",
+        "SettingsCalendars": "Takvimde 'Tarih aralığı' alanı gizlensin",
+        "SettingsCalendarsDescription": "Kullanıcıların pano takviminde özel tarih aralığı raporunu seçmesini engeller",
         "SettingsProfiles": "Kullanıcı profillerinden özel tarih aralığı varsayılan olarak kaldırılsın",
         "SettingsProfilesDescription": "Normal kullanıcılar profillerinden varsayılan olarak yalnız bugün, dün, hafta ve ay tarih aralıklarını seçebilir. Özel tarih aralığı kullanan kullanıcılar 'dün' olarak değiştirilir.",
-        "SettingsCalendars": "Takvimde 'Tarih Aralığı' alanı gizlensin",
-        "SettingsCalendarsDescription": "Kullanıcıların pano takviminde özel tarih aralığı raporunu seçmesini engeller.",
-        "SuperuserMessage": "Normal kullanıcılar profillerinde varsayılan olarak tarih aralığını seçemez. Tarih aralığı değerleri 'dün' olarak değiştirilir (RerUserDates)",
-        "DefaultDateMessage": "'Tarih aralığı' olan varsayılan kullanıcı ayarınız 'dün' olarak değiştirildi. Kullanıcı ayarlarınız bölümüne giderek farklı bir aralık seçebilirsiniz."
+        "SuperuserMessage": "Normal kullanıcılar profillerinde varsayılan olarak tarih aralığını seçemez. Tarih aralığı değerleri 'dün' olarak değiştirilir (RerUserDates)"
     }
 }

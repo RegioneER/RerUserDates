@@ -1,11 +1,11 @@
 {
     "RerUserDates": {
+        "DefaultDateMessage": "L'intervallo predefinito per i report è stato impostato a 'ieri'. Puoi modificarne il valore nella pagina Impostazioni Utente",
         "Settings": "Ottieni prestazioni di Matomo migliori togliendo gli intervalli di valori personalizzati dai profili utente forzando a 'ieri' il loro valore predefinito. Puoi anche nascondere il campo 'Intervallo di Date' dal calendario della dashboard.",
-        "SettingsProfiles": "Rimuovi gli intervalli personalizzati nelle impostazioni predefinite dell'utente",
-        "SettingsProfilesDescription": "Gli utenti possono soltanto scegliere gli intervalli, oggi, ieri, settimana, mese come valore predefinito. Nel caso abbiano già scelto un intervallo, vengono forzati a 'ieri'",
         "SettingsCalendars": "Nascondi 'Intervallo di date' dal calendario",
-        "SettingsCalendarsDescription": "Evita che gli utenti scelgano un report con intervallo di date personalizzato nel calendario della loro dashboard.",
-        "SuperuserMessage": "Agli utenti comuni non è consentito di scegliere un intervallo predefinito nel loro profilo. Gli intervalli sono forzati a 'ieri' (RerUserDates)",
-        "DefaultDateMessage": "L'intervallo predefinito per i report è stato impostato a 'ieri'. Puoi modificarne il valore nella pagina Impostazioni Utente"
+        "SettingsCalendarsDescription": "Evita che gli utenti scelgano un report con intervallo di date personalizzato nel calendario della loro dashboard",
+        "SettingsProfiles": "Rimuovi gli intervalli personalizzati nelle impostazioni predefinite dell'utente",
+        "SettingsProfilesDescription": "Gli utenti possono soltanto scegliere gli intervalli, oggi, ieri, settimana, mese come valore predefinito. Nel caso abbiano già scelto un intervallo, vengono forzati a 'ieri'.",
+        "SuperuserMessage": "Agli utenti comuni non è consentito di scegliere un intervallo predefinito nel loro profilo. Gli intervalli sono forzati a 'ieri' (RerUserDates)"
     }
 }
