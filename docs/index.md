@@ -1,11 +1,30 @@
-
 ## Installation
 
 You can easily install the plugin by Matomo's Marketplace web interface.
 
 Or please, read official [Matomo's documentation](https://matomo.org/faq/plugins/#faq_21) about plugins installation.
 
+## Translations
+
+This plugin came proudly translated by the community in the following languages:
+
+* English
+* French
+* Greek
+* Italian
+* Portuguese
+* Turkish
+* Ukrainian
+
 ## Changelog
+
+### 4.0.3
+
+Adding German and Ukrainian
+
+### 4.0.2
+
+Adding translations to marketplace
 
 ### 4.0.1
 
