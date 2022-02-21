@@ -1,1 +1,11 @@
-{}
+{
+    "RerUserDates": {
+        "DefaultDateMessage": "Du forvalgte brukerinnstillingstidsrom er nå «I går». Du kan besøke brukerinnstillingssiden for å velge et annet tidsrom.",
+        "Settings": "Få bedre Matomo-ytelse ved å fjerne egendefinerte dato-tidsspenn fra brukeres profiler, noe som tvinger forvalget deres til «i går». Du kan også skjule «Dato-tidsrom»-feltet fra kalenderen i oversikten.",
+        "SettingsCalendars": "Skjul «Dato-tidsrom» i kalenderen",
+        "SettingsCalendarsDescription": "Unngå at brukere velger egendefinerte tidsromsrapporter for kalenderen i oversikten sin",
+        "SettingsProfiles": "Fjern egendefinerte dato-tidsspennverdier som forvalg i brukeres profiler",
+        "SettingsProfilesDescription": "Vanlige brukere kan kun velge tidsrommet for i dag, i går, uken, måneden som forvalgt verdi i profilen sin. Brukere som allerede har gjort dette vil få «I går».",
+        "SuperuserMessage": "Vanlige brukere forbys å velge forvalgt tidsrom som verdi i profilen sin. Tidsromsverdier endres til «I går», (RerUserDates)"
+    }
+}
