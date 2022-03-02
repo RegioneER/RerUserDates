@@ -1,6 +1,11 @@
 {
     "RerUserDates": {
-        "SuperuserMessage": "Els usuaris normals no tenen permisos per escollir un interval de temps per defecte en el seu perfil. Els valors d'interval de temps estan forçats a 'ahir' (RerUserDates)",
-        "DefaultDateMessage": "La teva configuració per defecte de 'rang' s'ha establert a 'ahir'. Pot gestionar un rang diferent a la pàgina de configuracions de l'usuari."
+        "DefaultDateMessage": "La vostra configuració d'usuari predeterminada \"interval\" és ara \"ahir\". Podeu visitar la pàgina de configuració de l'usuari per triar un interval diferent",
+        "Settings": "Millora el rendiment de Matomo eliminant els valors d'interval personalitzats dels perfils dels usuaris i forçant el seu valor predeterminat a \"ahir\". També podeu amagar el camp \"Interval de dates\" del calendari del tauler.",
+        "SettingsCalendars": "Amaga \"Interval de dates\" al calendari",
+        "SettingsCalendarsDescription": "Eviteu que els usuaris triïn un informe d'interval personalitzat al calendari del seu tauler",
+        "SettingsProfiles": "Elimineu els valors d'interval personalitzats per defecte als perfils dels usuaris",
+        "SettingsProfilesDescription": "Els usuaris habituals només poden triar els intervals d'avui, ahir, setmana i mesos com a valor predeterminat al seu perfil. Els usuaris que ja tenen intervals estan obligats a \"ahir\".",
+        "SuperuserMessage": "Els usuaris normals no tenen permisos per escollir un interval de temps per defecte en el seu perfil. Els valors d'interval de temps estan forçats a 'ahir' (RerUserDates)"
     }
 }

@@ -1,11 +1,11 @@
 {
     "RerUserDates": {
+        "DefaultDateMessage": "Rregullimi juaj parazgjedhje 'range' për përdoruesin tani është 'dje'. Që të zgjidhni një interval tjetër, mund të vizitoni faqen e rregullimeve të përdoruesit",
         "Settings": "Përmirësoni punimin e Matomo-s duke hequr vlera intervalesh vetjake nga profile përdoruesish, duke e kthyer parazgjedhjen e tyre te 'dje'. Mund edhe ta fshihni fushën 'Interval Datash' prej kalendarit të pultit.",
+        "SettingsCalendars": "Fshih 'Interval datash' te kalendari",
+        "SettingsCalendarsDescription": "Pengoje zgjedhjen nga përdoruesit të raportit rreth një intervali vetjak në kalendarin e pultit të tyre",
         "SettingsProfiles": "Hiqi vlerat vetjake intervalesh si parazgjedhje nga profile përdoruesish",
-        "SettingsProfilesDescription": "Si vlerë parazgjedhje në profilet e tyre përdoruesit e rregullt mund të zgjedhin vetëm intervalet sot, dje, javë, muaj. Përdoruesit që kanë tashmë intervale kalohen te 'dje'",
-        "SettingsCalendars": "Fshihe në kalendar 'Interval datash'",
-        "SettingsCalendarsDescription": "Pengoje zgjedhjen nga përdoruesit të raportit rreth një intervali vetjak në kalendarin e pultit të tyre.",
-        "SuperuserMessage": "Përdoruesve të rregullt u ndalohet të zgjedhin në profilin e tyre një vlerë parazgjedhje të bazuar në një interval. Vlerat për intervale kalohen detyrimisht te 'dje' (RerUserDates)",
-        "DefaultDateMessage": "Rregullimi juaj parazgjedhje 'range' për përdoruesin tani është 'dje'. Që të zgjidhni një interval tjetër, mund të vizitoni faqen e rregullimeve të përdoruesit."
+        "SettingsProfilesDescription": "Si vlerë parazgjedhje në profilet e tyre përdoruesit e rregullt mund të zgjedhin vetëm intervalet sot, dje, javë, muaj. Përdoruesit që kanë tashmë intervale, kalohen te 'dje'.",
+        "SuperuserMessage": "Përdoruesve të rregullt u ndalohet të zgjedhin në profilin e tyre një vlerë parazgjedhje të bazuar në një interval. Vlerat për intervale kalohen detyrimisht te 'dje' (RerUserDates)"
     }
 }
