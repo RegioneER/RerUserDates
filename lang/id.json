@@ -1,5 +1,11 @@
 {
     "RerUserDates": {
-        "SettingsCalendars": "Sembunyikan 'Rentang tanggal' dalam kalender"
+        "DefaultDateMessage": "Pengaturan pengguna asali Anda 'rentang' sekarang 'kemarin'. Anda dapat mengunjungi halaman pengaturan pengguna untuk memilih rentang yang berbeda",
+        "Settings": "Dapatkan kinerja Matomo yang lebih baik dengan menghapus nilai rentang khusus dari profil pengguna yang memaksa mengatur asali mereka ke 'kemarin'. Anda juga dapat menyembunyikan bidang 'Rentang Tanggal' dari kalender dasbor.",
+        "SettingsCalendars": "Sembunyikan 'Rentang tanggal' dalam kalender",
+        "SettingsCalendarsDescription": "Hindari pengguna untuk memilih laporan dengan rentang khusus di kalender dasbor mereka",
+        "SettingsProfiles": "Menghapus nilai rentang kustom sebagai asali di profil pengguna",
+        "SettingsProfilesDescription": "Pengguna biasa hanya dapat memilih rentang hari ini, kemarin, minggu, bulan sebagai nilai bawaan di profil mereka. Pengguna yang sudah memiliki rentang dipaksa ke opsi 'kemarin'.",
+        "SuperuserMessage": "Pengguna biasa dilarang memilih nilai kisaran bawaan yang di profil mereka. Nilai kisaran dipaksa ke 'kemarin' (RerUserDates)"
     }
 }
