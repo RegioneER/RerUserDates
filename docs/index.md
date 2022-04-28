@@ -10,13 +10,16 @@ Or please, read official [Matomo's documentation](https://matomo.org/faq/plugins
 
 - Albanian
 - Brazilian
+- Bulgarian
 - Catalan
 - English
 - French
 - German
 - Greek
+- Indonesian
 - Italian
 - Japanese
+- Korean
 - Norwegian Bokmål
 - Portuguese
 - Turkish
