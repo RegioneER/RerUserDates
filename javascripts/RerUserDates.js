@@ -6,6 +6,8 @@
  */
 
 $(document).ready(function (){
+    console.log('RerUserDates PRONTO!');
+/*
     (function (require, $) {
         var ajaxHelper = require('ajaxHelper');
         var ajax = new ajaxHelper();
@@ -27,5 +29,7 @@ $(document).ready(function (){
             }
         });
         ajax.send();
-    })(require, jQuery);    
+    })(require, jQuery);   
+     
+*/
 })

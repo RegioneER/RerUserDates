@@ -5,14 +5,15 @@ namespace Piwik\Plugins\RerUserDates;
 use Piwik\Piwik;
 use Piwik\Settings\Setting;
 use Piwik\Settings\FieldConfig;
+use Psr\Log\LoggerInterface;
 
 /**
  * Defines Settings for RerUserDates.
  *
  * Usage like this:
- * $settings = new SystemSettings();
- * $settings->metric->getValue();
- * $settings->description->getValue();
+ * $s = new SystemSettings();
+ * $s->metric->getValue();
+ * $s->description->getValue();
  */
 class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 {
@@ -25,11 +26,9 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 
     protected function init()
     {
-//        $this->setIntroduction(Piwik::translate('RerUserDates_Settings'));
         $this->profiles = $this->createProfileSettings();
         $this->calendars = $this->createCalendarSettings();
     }
-
 
     /**
      * @return \Piwik\Settings\Plugin\SystemSetting

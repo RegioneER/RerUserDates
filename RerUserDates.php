@@ -2,20 +2,40 @@
 
 namespace Piwik\Plugins\RerUserDates;
 
+use Exception;
 use Piwik\Common;
+use Piwik\Container\StaticContainer;
 use Piwik\Piwik;
 use Piwik\Plugin;
 use Piwik\Notification;
-use Piwik\Plugins\UsersManager\API as APIUsersManager;
+use Psr\Log\LoggerInterface;
 
 /**
  */
 class RerUserDates extends Plugin
 {
+
+    /**
+     * @var LoggerInterface
+     */
+    protected $logger;
+
+    protected $usersManagerApi;
+
+    public function __construct($pluginName = false)
+    {
+        parent::__construct($pluginName);
+        $this->logger = StaticContainer::get('Psr\Log\LoggerInterface');
+        $this->usersManagerApi = StaticContainer::get('Piwik\Plugins\UsersManager\API');
+    }
+
     public function registerEvents()
     {
+        $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
+
         return array(
-            'AssetManager.getJavaScriptFiles'      => 'getJsFiles',
+//            'AssetManager.getJavaScriptFiles'      => 'getJsFiles',
+            'AssetManager.getStylesheetFiles'      => 'getCssFiles',
             'UsersManager.getDefaultDates'         => 'noRangedDates',
             'Controller.UsersManager.userSettings' => 'userSettingsNotification',
             'Controller.CoreHome.index'            => 'checkDefaultReportDate',
@@ -23,12 +43,16 @@ class RerUserDates extends Plugin
         );
     }
 
-    /**
-     * @param $jsFiles
-     */
-    public function getJsFiles(&$jsFiles)
+    public function getJsFiles(&$asset)
     {
-        $jsFiles[] = 'plugins/RerUserDates/javascripts/RerUserDates.js';
+        $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
+        $asset[] = 'plugins/RerUserDates/javascripts/RerUserDates.js';
+    }
+
+    public function getCssFiles(&$asset)
+    {
+        $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
+        $asset[] = 'plugins/RerUserDates/stylesheets/RerUserDates.less';
     }
 
     /**
@@ -39,10 +63,12 @@ class RerUserDates extends Plugin
      */
     public function noRangedDates(&$dates)
     {
-        Piwik::checkUserIsNotAnonymous();
-	    $settings = new SystemSettings;
+        $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
 
-        if (true === $settings->profiles->getValue() && false === $this->isSuperuser()) {
+        Piwik::checkUserIsNotAnonymous();
+        $rerSystemSettings = new SystemSettings;
+
+        if (true === $rerSystemSettings->profiles->getValue() && false === $this->isSuperuser()) {
             $dates = array(
                 'today'     => Piwik::translate('General_Today'),
                 'yesterday' => Piwik::translate('General_Yesterday'),
@@ -57,11 +83,13 @@ class RerUserDates extends Plugin
      * Notify plugin's behaviour only to Super admins
      */
     public function userSettingsNotification()
-    {
-        Piwik::checkUserIsNotAnonymous();
-	$settings = new SystemSettings;
+    { 
+        $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
 
-        if (true === $settings->profiles->getValue() && true === $this->isSuperuser()) {
+        Piwik::checkUserIsNotAnonymous();
+        $rerSystemSettings = new SystemSettings;
+
+        if (true === $rerSystemSettings->profiles->getValue() && true === $this->isSuperuser()) {
             $notification = new Notification(Piwik::translate('RerUserDates_SuperuserMessage'));
             Notification\Manager::notify('RerUserDates_SuperuserMessage', $notification);
         }
@@ -74,8 +102,24 @@ class RerUserDates extends Plugin
      */
     protected function isSuperuser()
     {
-        $userLogin = Piwik::getCurrentUserLogin();
-        $user = APIUsersManager::getInstance()->getUser($userLogin);
+        $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
+
+        try {
+            $userLogin = Piwik::getCurrentUserLogin();
+            $this->logger->debug('USERLOGIN: {u}', ['u' => $userLogin]);
+        } catch (Exception $e) {
+            $this->logger->debug('USERLOGIN EXC: {u}', ['u' => $userLogin]);
+            $e->getMessage();
+        }
+
+        try {
+            $user = $this->usersManagerApi->getUser($userLogin);
+            $this->logger->debug('USERDATA: {u}', ['u' => $user]);    
+        } catch (Exception $e) {
+            $this->logger->debug('USERDATA EXC: {u}', ['u' => $user]);    
+            $e->getMessage();
+        }
+
         if (true == $user['superuser_access']) {
 
             return true;
@@ -89,15 +133,26 @@ class RerUserDates extends Plugin
      */
     public function checkDefaultReportDate()
     {
-        Piwik::checkUserIsNotAnonymous();
-	$settings = new SystemSettings;
+        $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
 
-        if (true === $settings->profiles->getValue() && false === $this->isSuperuser()) {
-            $userDates = APIUsersManager::getInstance()->getUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT_DATE);
-            $userReport = APIUsersManager::getInstance()->getUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT);
+        Piwik::checkUserIsNotAnonymous();
+
+        $rerSystemSettings = new SystemSettings;
+
+        if (true === $rerSystemSettings->profiles->getValue() && false === $this->isSuperuser()) {
+            $userDates = $this->usersManagerApi->getUserPreference(
+                $this->usersManagerApi::PREFERENCE_DEFAULT_REPORT_DATE
+            );
+            $userReport = $this->usersManagerApi->getUserPreference(
+                $this->usersManagerApi::PREFERENCE_DEFAULT_REPORT
+            );
 
             if (preg_match('/^[prev|last].+/', $userDates)) {
-                APIUsersManager::getInstance()->setUserPreference(Piwik::getCurrentUserLogin(), APIUsersManager::PREFERENCE_DEFAULT_REPORT_DATE, 'yesterday');
+                $this->usersManagerApi->setUserPreference(
+                    $this->usersManagerApi::PREFERENCE_DEFAULT_REPORT_DATE,
+                    Piwik::getCurrentUserLogin(),
+                    'yesterday'
+                );
 
                 $notification = new Notification(Piwik::translate('RerUserDates_DefaultDateMessage'));
                 $notification->context = Notification::CONTEXT_WARNING;

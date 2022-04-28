@@ -27,7 +27,9 @@ Or please, read official [Matomo's documentation](https://matomo.org/faq/plugins
 #### v4.0
 
 - Adding Weblate translations and Weblate repository syncronization.
-- Bumping mayor version to match Matomo's. 
+- Bumping mayor version to match Matomo's.
+- Refactoring PHP/DI
+- Refactoring UI modification, by css not js
 
 #### v3.0
 
