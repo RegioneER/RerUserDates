@@ -1,11 +1,11 @@
 {
     "RerUserDates": {
+        "DefaultDateMessage": "Din standardinställning för användarnas 'intervall' är nu 'igår'. Du kan besöka sidan Användarinställningar för att välja ett annat intervall",
         "Settings": "Förbättra Matomos prestanda genom att ta bort anpassade intervallvärden från användarprofiler som tvingar sin standard till \"igår\". Du kan också dölja fältet 'Datumintervall' från instrumentpanelens kalender.",
-        "SettingsProfiles": "Ta bort anpassade intervallvärden som standard i användarnas profiler",
-        "SettingsProfilesDescription": "Vanliga användare kan bara välja idag, igår, vecka och månadsintervall som deras standardvärde i sin profil. Användare som redan använder intervaller tvingas till 'igår'",
         "SettingsCalendars": "Göm \"Datumintervall\" i kalendern",
-        "SettingsCalendarsDescription": "Undvik användare att få välja ett eget rapportintervall i deras instrumentpanel för kalendern.",
-        "SuperuserMessage": "Vanliga användare kan inte välja ett intervall standardvärde i sin profil. Intervallvärden tvingas till 'igår' (RerUserDates)",
-        "DefaultDateMessage": "Din standardinställning för användarnas 'intervall' är nu 'igår'. Du kan besöka sidan Användarinställningar för att välja ett annat intervall"
+        "SettingsCalendarsDescription": "Undvik att användare väljer en anpassad serierapport i deras instrumentpanelens kalender",
+        "SettingsProfiles": "Ta bort anpassade intervallvärden som standard i användarnas profiler",
+        "SettingsProfilesDescription": "Vanliga användare kan bara välja intervall för idag, igår, vecka och månad som standardvärde i sin profil. Användare som redan har intervall tvingas välja \"igår\".",
+        "SuperuserMessage": "Vanliga användare kan inte välja ett intervall standardvärde i sin profil. Intervallvärden tvingas till 'igår' (RerUserDates)"
     }
 }
