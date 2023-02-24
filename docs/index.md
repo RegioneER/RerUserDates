@@ -22,6 +22,8 @@ Or please, read official [Matomo's documentation](https://matomo.org/faq/plugins
 - Korean
 - Norwegian Bokmål
 - Portuguese
+- Spanish
+- Swedish
 - Turkish
 - Ukrainian
 
