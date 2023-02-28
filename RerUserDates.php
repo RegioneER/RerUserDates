@@ -34,19 +34,12 @@ class RerUserDates extends Plugin
         $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
 
         return array(
-//            'AssetManager.getJavaScriptFiles'      => 'getJsFiles',
             'AssetManager.getStylesheetFiles'      => 'getCssFiles',
             'UsersManager.getDefaultDates'         => 'noRangedDates',
             'Controller.UsersManager.userSettings' => 'userSettingsNotification',
             'Controller.CoreHome.index'            => 'checkDefaultReportDate',
             'Controller.MultiSites.index'          => 'checkDefaultReportDate',
         );
-    }
-
-    public function getJsFiles(&$asset)
-    {
-        $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
-        $asset[] = 'plugins/RerUserDates/javascripts/RerUserDates.js';
     }
 
     public function getCssFiles(&$asset)
@@ -103,28 +96,17 @@ class RerUserDates extends Plugin
     protected function isSuperuser()
     {
         $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
-
         try {
-            $userLogin = Piwik::getCurrentUserLogin();
-            $this->logger->debug('USERLOGIN: {u}', ['u' => $userLogin]);
-        } catch (Exception $e) {
-            $this->logger->debug('USERLOGIN EXC: {u}', ['u' => $userLogin]);
-            $e->getMessage();
-        }
-
-        try {
-            $user = $this->usersManagerApi->getUser($userLogin);
-            $this->logger->debug('USERDATA: {u}', ['u' => $user]);    
-        } catch (Exception $e) {
-            $this->logger->debug('USERDATA EXC: {u}', ['u' => $user]);    
-            $e->getMessage();
-        }
-
-        if (true == $user['superuser_access']) {
+            Piwik::checkUserHasSuperUserAccess();
+            $this->logger->debug('FN: {fn} >> {mm}', ['fn' => __FUNCTION__, 'mm' => 'GOT SU']);
 
             return true;
-        }
+        } catch (Exception $e) {
+            $this->logger->debug('FN: {fn} >> {mm}', ['fn' => __FUNCTION__, 'mm' => 'NOT SU']);
 
+            return false;
+        }
+        
         return false;
     }
 
@@ -140,6 +122,8 @@ class RerUserDates extends Plugin
         $rerSystemSettings = new SystemSettings;
 
         if (true === $rerSystemSettings->profiles->getValue() && false === $this->isSuperuser()) {
+        $this->logger->debug('FN: {fn} >>> {mm}', ['fn' => __FUNCTION__, 'mm' => 'GOT TO WORK']);
+
             $userDates = $this->usersManagerApi->getUserPreference(
                 $this->usersManagerApi::PREFERENCE_DEFAULT_REPORT_DATE
             );
@@ -160,6 +144,7 @@ class RerUserDates extends Plugin
 
                 $period = Common::getRequestVar('period');
                 if ('range' == $period) {
+                    $this->logger->debug('FN: {fn} >>> {mm}', ['fn' => __FUNCTION__, 'mm' => 'GOT TO REDIRECT']);
                     Piwik::redirectToModule($userReport,'index', array('period' => 'day', 'date' => 'yesterday'));
                 }
             }

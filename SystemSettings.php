@@ -5,7 +5,6 @@ namespace Piwik\Plugins\RerUserDates;
 use Piwik\Piwik;
 use Piwik\Settings\Setting;
 use Piwik\Settings\FieldConfig;
-use Psr\Log\LoggerInterface;
 
 /**
  * Defines Settings for RerUserDates.
