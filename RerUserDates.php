@@ -3,6 +3,7 @@
 namespace Piwik\Plugins\RerUserDates;
 
 use Exception;
+use Piwik\Url;
 use Piwik\Common;
 use Piwik\Container\StaticContainer;
 use Piwik\Piwik;
@@ -113,25 +114,28 @@ class RerUserDates extends Plugin
     /**
      * Override for unwanted custom range selections setting to yesterday/day period with warning notification
      */
-    public function checkDefaultReportDate()
+    public function checkDefaultReportDate(&$parameters)
     {
-        $this->logger->debug('FN: {fn}', ['fn' => __FUNCTION__]);
+        $this->logger->debug('FN: {fn} params: {pp}', ['fn' => __FUNCTION__, 'pp' => $parameters]);
 
         Piwik::checkUserIsNotAnonymous();
 
         $rerSystemSettings = new SystemSettings;
 
         if (true === $rerSystemSettings->profiles->getValue() && false === $this->isSuperuser()) {
-        $this->logger->debug('FN: {fn} >>> {mm}', ['fn' => __FUNCTION__, 'mm' => 'GOT TO WORK']);
+            $this->logger->debug('FN: {fn} >>> {mm}', ['fn' => __FUNCTION__, 'mm' => 'GOT TO WORK']);
 
             $userDates = $this->usersManagerApi->getUserPreference(
                 $this->usersManagerApi::PREFERENCE_DEFAULT_REPORT_DATE
             );
+            $this->logger->debug('FN: {fn} >>> date {mm}', ['fn' => __FUNCTION__, 'mm' => $userDates]);
             $userReport = $this->usersManagerApi->getUserPreference(
                 $this->usersManagerApi::PREFERENCE_DEFAULT_REPORT
             );
+            $this->logger->debug('FN: {fn} >>> report {mm}', ['fn' => __FUNCTION__, 'mm' => $userReport]);
 
-            if (preg_match('/^[prev|last].+/', $userDates)) {
+            if (preg_match('/^(previous|last)\d{1,2}/', $userDates)) {
+		        $this->logger->debug('FN: {fn} >>> {mm}', ['fn' => __FUNCTION__, 'mm' => 'pregmeccio']);
                 $this->usersManagerApi->setUserPreference(
                     $this->usersManagerApi::PREFERENCE_DEFAULT_REPORT_DATE,
                     Piwik::getCurrentUserLogin(),
@@ -145,10 +149,12 @@ class RerUserDates extends Plugin
                 $period = Common::getRequestVar('period');
                 if ('range' == $period) {
                     $this->logger->debug('FN: {fn} >>> {mm}', ['fn' => __FUNCTION__, 'mm' => 'GOT TO REDIRECT']);
-                    Piwik::redirectToModule($userReport,'index', array('period' => 'day', 'date' => 'yesterday'));
+                    //Piwik::redirectToModule($userReport,'index', array('period' => 'day', 'date' => 'yesterday'));
                 }
-            }
+            } 
         }
+
+    	return;
     }
 
 }
