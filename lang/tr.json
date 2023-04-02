@@ -5,7 +5,7 @@
         "SettingsCalendars": "Takvimde 'Tarih aralığı' alanı gizlensin",
         "SettingsCalendarsDescription": "Kullanıcıların pano takviminde özel tarih aralığı raporunu seçmesini engeller",
         "SettingsProfiles": "Kullanıcı profillerinden özel tarih aralığı varsayılan olarak kaldırılsın",
-        "SettingsProfilesDescription": "Normal kullanıcılar profillerinden varsayılan olarak yalnız bugün, dün, hafta ve ay tarih aralıklarını seçebilir. Özel tarih aralığı kullanan kullanıcılar 'dün' olarak değiştirilir.",
+        "SettingsProfilesDescription": "Normal kullanıcılar profillerinden varsayılan olarak yalnızca bugün, dün, hafta ve ay tarih aralıklarını seçebilir. Özel tarih aralığı kullanan kullanıcılar 'dün' olarak değiştirilir.",
         "SuperuserMessage": "Normal kullanıcılar profillerinde varsayılan olarak tarih aralığını seçemez. Tarih aralığı değerleri 'dün' olarak değiştirilir (RerUserDates)"
     }
 }
