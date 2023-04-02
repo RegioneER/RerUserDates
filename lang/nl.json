@@ -1,11 +1,11 @@
 {
     "RerUserDates": {
+        "DefaultDateMessage": "Uw standaard gebruikersinstelling voor 'periode' is nu 'gisteren'. Op de pagina instellingen gebruiker kunt u een andere periode kiezen",
         "Settings": "Krijg betere prestaties van Matomo door het verwijderen van aangepaste datumbereik uit gebruikers profielen, waardoor hun standaardwaarde 'gisteren' is. Je kunt het veld 'Datumbereik' ook verbergen in de kalender van het dashboard.",
-        "SettingsProfiles": "Verwijder standaard reeks waarden als standaard in gebruikers profielen",
-        "SettingsProfilesDescription": "Standaard gebruikers kunnen alleen kiezen uit, vandaag, gisteren, week en maand periodes als standaard waarde in hun profiel. Gebruikers die al een periode hebben, worden standaard op 'gisteren' gezet.",
         "SettingsCalendars": "Verberg 'Datumbereik' in de kalender",
-        "SettingsCalendarsDescription": "Vermijd dat gebruikers een standaard bereik kunnen selecteren in hun dashboard kalender.",
-        "SuperuserMessage": "Standaard gebruikers kunnen de standaard waarde voor periode selectie niet wijzigen in hun profiel. Deze periode waarde staat standaard op 'gisteren' (RerUserDates)",
-        "DefaultDateMessage": "Je standaard gebruikers instellingen op periode is nu 'gisteren'. Je kan je instelling aanpassen op de persoonlijke instellingen pagina."
+        "SettingsCalendarsDescription": "Vermijd dat gebruikers een standaard bereik kunnen selecteren in hun dashboard kalender",
+        "SettingsProfiles": "Verwijder standaard reeks waarden als standaard in gebruikers profielen",
+        "SettingsProfilesDescription": "Standaard gebruikers kunnen enkel kiezen uit vandaag, gisteren, week- en maandperiodes als standaard waarde in hun profiel. Gebruikers die al een periode hebben, worden op 'gisteren' gezet.",
+        "SuperuserMessage": "Standaard gebruikers kunnen de standaard waarde voor periode selectie niet wijzigen in hun profiel. Deze periode waarde staat standaard op 'gisteren' (RerUserDates)"
     }
 }
