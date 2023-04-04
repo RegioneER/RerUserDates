@@ -3,7 +3,7 @@
 [![Catalogo del riuso software](https://img.shields.io/badge/Riuso%20AGID-Software-%230076e3)](https://developers.italia.it/it/pa/r_emiro)
 [![Matomo version](https://img.shields.io/badge/matomo-4.x--dev-success)](https://github.com/matomo-org/matomo)
 [![Matomo version](https://img.shields.io/badge/matomo-3.x--dev-success)](https://github.com/matomo-org/matomo)
-[![Weblate translation status](https://hosted.weblate.org/widgets/matomo/-/communityplugin-reruserdates/88x31-grey.png)](https://hosted.weblate.org/engage/matomo/)
+[![Weblate translation status](https://hosted.weblate.org/widgets/matomo/-/communityplugin-reruserdates/svg-badge.svg)](https://hosted.weblate.org/engage/matomo/)
 [![GitHub license](https://img.shields.io/github/license/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/issues)
 [![GitHub forks](https://img.shields.io/github/forks/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/network)
