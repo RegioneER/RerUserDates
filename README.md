@@ -3,6 +3,7 @@
 [![Catalogo del riuso software](https://img.shields.io/badge/Riuso%20AGID-Software-%230076e3)](https://developers.italia.it/it/pa/r_emiro)
 [![Matomo version](https://img.shields.io/badge/matomo-4.x--dev-success)](https://github.com/matomo-org/matomo)
 [![Matomo version](https://img.shields.io/badge/matomo-3.x--dev-success)](https://github.com/matomo-org/matomo)
+[![Weblate translation status](https://hosted.weblate.org/widgets/matomo/-/communityplugin-reruserdates/88x31-grey.png)](https://hosted.weblate.org/engage/matomo/)
 [![GitHub license](https://img.shields.io/github/license/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/issues)
 [![GitHub forks](https://img.shields.io/github/forks/RegioneER/RerUserDates)](https://github.com/RegioneER/RerUserDates/network)
@@ -34,3 +35,17 @@ This is free software distributed under [GPLv3](http://www.gnu.org/licenses/gpl-
 ## Support
 
 You can ask for support and your feedback is appreciated at plugin's [issue center on Github](https://github.com/RegioneER/RerUserDates/issues).
+
+## Screenshots
+
+Altered user settings, regular users can't no more select custom periods.
+
+![Altered user settings](screenshots/RerUserDates.png)
+
+Altered calender for regular users, they cannot select custom periods, no more from calendar.
+
+![Altered calendar selection](screenshots/RerUserDates-cal.png)
+
+Administrative settings, controls plugin's behaviour by editing general settings.
+
+![Plugin's general settings](screenshots/RerUserDates-settings.png)
