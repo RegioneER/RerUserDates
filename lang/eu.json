@@ -1,1 +1,11 @@
-{}
+{
+    "RerUserDates": {
+        "DefaultDateMessage": "Zure 'tartea' erabiltzaile ezarpena 'atzo' da orain. Erabiltzailearen ezarpenen orrira joan zaitezke beste tarte bat aukeratzeko",
+        "Settings": "Hobetu Matomoren errendimendua tarte pertsonalizatuen balioak kenduz erabiltzaileen profiletatik eta modu lehenetsian 'atzo' erabiltzera behartuz. 'Data-tartea' eremua ere ezkutatu dezakezu panelaren egutegitik.",
+        "SettingsCalendars": "Ezkutatu 'Data-tartea' egutegitik",
+        "SettingsCalendarsDescription": "Ez utzi erabiltzaileei txostenaren tarte pertsonalizatu bat aukeratzen paneleko egutegian",
+        "SettingsProfiles": "Kendu tarte pertsonalizatuen balioak erabiltzaileen profiletik modu lehenetsian",
+        "SettingsProfilesDescription": "Erabiltzaile arruntek gaur, atzo, astea, hilabetea tarteak soilik hautatu ditzakete tarte lehenetsi bezala beren profilean. Aurrez balio lehenetsi bezala tarte bat hautatuta zuten erabiltzaileei 'atzo' balioa ezartzen zaie.",
+        "SuperuserMessage": "Erabiltzaile arruntek debekatua dute balio lehenetsi bezala tarte bat aukeratzea haien profilean. Tartea duten balioak 'atzo' bihurtzen dira (RerUserDates)"
+    }
+}
