@@ -1,1 +1,11 @@
-{}
+{
+    "RerUserDates": {
+        "DefaultDateMessage": "Tvoja zadana korisnička postavka „raspon” je sada postavljena na „jučer”. Možeš posjetiti stranicu postavka korisnika za biranje jednog drugog raspona",
+        "Settings": "Poboljšaj performanse Matomoa uklanjanjem prilagođenih raspona datuma iz korisničkih profila tako da im zadani raspon bude postavljen na „jučer”. Također možeš sakriti polje „Raspon datuma” iz kalendara na nadzornoj ploči.",
+        "SettingsCalendars": "Sakrij „Raspon datuma” u kalendaru",
+        "SettingsCalendarsDescription": "Onemogući korisnicima biranje prilagođenog raspona izvještaja u kalendaru njihove nadzorne ploče",
+        "SettingsProfiles": "Ukloni prilagođene raspone datuma kao zadane u korisničkim profilima",
+        "SettingsProfilesDescription": "Obični korisnici mogu kao zadanu vrijednost u svom profilu odabrati samo raspone: danas, jučer, tjedan ili mjesec. Za korisnike koji već imaju raspone postavlja se \"jučer\".",
+        "SuperuserMessage": "Običnim korisnicima je zabranjeno odabrati zadanu vrijednost s rasponom u svom profilu. Vrijednosti s rasponom se postavljaju na „jučer” (RerUserDates)"
+    }
+}
